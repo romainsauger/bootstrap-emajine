@@ -1,0 +1,33 @@
+<div id="poll">
+
+	<mx:bloc id="page">
+		<mx:bloc id="title"><h2><mx:text id="title"/></h2></mx:bloc id="title">
+		<mx:bloc id="description"><div class="pollDescription"><mx:text id="description"/></div></mx:bloc id="description">
+		<form method="post" mXattribut="action:action" id="poll_form" enctype="multipart/form-data">    
+			<mx:bloc id="elements">
+				<mx:text id="element"/>
+			</mx:bloc id="elements">
+
+			<input type="hidden" name="page" mXattribut="value:page"/>
+
+			<mx:bloc id="finish">
+				<div class="submit">
+					<input type="submit" class="class_poll_submit" mXattribut="name:name;value:value;onclick:onclick"/>
+				</div>
+			</mx:bloc id="finish">
+		</form>
+	</mx:bloc id="page">
+	
+	<mx:bloc id="final_message">
+		<div class="pollFinalMessage" ><mx:text id="final_message"/></div>
+	</mx:bloc id="final_message">
+	
+	<mx:bloc id="reject_message">
+		<div class="pollRejectMessage" ><mx:text id="reject_message"/></div>
+	</mx:bloc id="reject_message">
+	
+	<mx:bloc id="stats_link">
+		<a mXattribut="href:href;hreflang:hreflang;title:title;" class="pollStatsLink" ><span><mx:text id="link_label"/></span></a>
+	</mx:bloc id="stats_link">
+	
+</div>

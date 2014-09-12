@@ -1,0 +1,37 @@
+<h2><a mXattribut="href:hreftitle;hreflang:hreflangtitle;title:titletitle"><mx:text id="post_title" /></a></h2>
+
+<mx:bloc id="date">
+	<span class="post_date"><mx:text id="post_date" /></span>
+</mx:bloc id="date">
+
+<mx:bloc id="author">
+	<span class="post_author"><mx:text id="post_author" /></span>
+</mx:bloc id="author">
+
+<mx:bloc id="picture">
+	<div class="post_picture_resume"><mx:text id="post_picture" /></div>
+</mx:bloc id="picture">
+
+<div>
+	<mx:text id="post_resume" />
+	<mx:bloc id="nb_char_max_description">300</mx:bloc id="nb_char_max_description"><!-- Nombre max de caracteres pour la description -->
+	<mx:bloc id="extension_description">...</mx:bloc id="extension_description"><!-- Extension utilisee lorsque la description est tronquee -->
+</div>
+
+<mx:bloc id="more">
+	<div class="linksmore"><a mXattribut="href:href;hreflang:hreflang;title:title"><mx:text id="label" /></a></div>
+</mx:bloc id="more">
+
+<!-- Donnees relative aux commentaires -->
+<mx:bloc id="comments_datas">
+	<div id="commentsDatas">
+		<mx:bloc id="link"><a mXattribut="href:href;hreflang:hreflang;title:title" class="commentsDatasLink" ><span><mx:text id="label" /></span></a></mx:bloc id="link">
+		<mx:bloc id="last_comment_date" ><span class="lastCommentDate" ><mx:text id="date" /></span></mx:bloc id="last_comment_date">
+		<mx:bloc id="last_commenter" ><span class="lastCommenter"><mx:text id="name" /></span></mx:bloc id="last_commenter">
+	</div>
+</mx:bloc id="comments_datas">
+
+<!-- Donnees relative aux notes -->
+<mx:bloc id="ratings_datas">
+	<div class="ratingsDatas" ><mx:text id="content" /></div>
+</mx:bloc id="ratings_datas">

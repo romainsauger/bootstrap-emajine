@@ -1,0 +1,41 @@
+<div class="contributions">
+
+	<!-- Formulaire -->
+	<mx:bloc id="form_contribution">
+		<a mXattribut="href:href;hreflang:hreflang;title:title;" class="contributionBack"><span><mx:text id="label" /></span></a><!-- Lien retour	 -->
+		<mx:text id="content" />
+	</mx:bloc id="form_contribution">
+
+	<!-- Preview -->
+	<mx:bloc id="preview">
+		<fieldset>
+			<legend><mx:text id="legend" /></legend>
+		
+			<h1><mx:text id="title" /></h1>
+			<span class="contributionsPreviewDate" ><mx:text id="date" /></span>, <span class="PostPreviewAuthor" ><mx:text id="author" /></span>
+			<div class="contributionsPreviewDescription"><mx:text id="description" /></div>
+		
+			<div>
+				<div class="PreviewContent"><mx:text id="content" /></div>
+			</div>
+		</fieldset>
+		<div class="submit">
+			<mx:bloc id="edit">
+				<a mXattribut="href:href;hreflang:hreflang;title:title;" class="contributionsEdit" ><span><mx:text id="label" /></span></a>
+			</mx:bloc id="edit">
+			<mx:bloc id="save">
+				<a mXattribut="href:href;hreflang:hreflang;title:title;" class="contributionsSave" ><span><mx:text id="label" /></span></a>
+			</mx:bloc id="save">
+		</div>
+	</mx:bloc id="preview">
+
+	<!-- Message affiche apres l'enregistrement de la contribution si elle est en attente de moderation -->
+	<mx:bloc id="msg_moderation">
+		<div class="contributionValidate" >
+			<p>Merci pour votre contribution !</p>
+			<p>Votre billet est soumis &agrave; modération, vous serez notifi&eacute; lors de sa publication.</p>
+			<a mXattribut="href:href;hreflang:hreflang;title:title;"><mx:text id="label" /></a><!-- Lien retour	 -->
+		</div>
+	</mx:bloc id="msg_moderation">
+
+</div>

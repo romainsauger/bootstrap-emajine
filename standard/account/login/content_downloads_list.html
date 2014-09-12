@@ -1,0 +1,152 @@
+<div id="accountDownloadsList">
+	<h1><mx:text id="title" /></h1>
+
+	<mx:bloc id="msg">
+		<mx:text id="msg" />
+	</mx:bloc id="msg">
+	
+	<mx:bloc id="no_result">
+		<mx:text id="no_result" />
+	</mx:bloc id="no_result">
+	
+	<mx:bloc id="downloads_list">
+	<div id="downloadsList">
+		<h2><mx:text id="download_list_title" /></h2>
+		<table>
+			<thead>
+				<tr>
+					<th><mx:text id="num_order" /></th>
+					<th><mx:text id="date" /></th>
+					<th><mx:text id="title" /></th>
+					<th><mx:text id="type" /></th>
+					<th><mx:text id="weight" /></th>
+					<th><mx:text id="status" /></th>
+					<th><mx:text id="nb_downloads" /></th>
+					<th><mx:text id="maximum" /></th>
+					<th><mx:text id="duree" /></th>
+					<th mXattribut="colspan:colspan_actions"><mx:text id="actions" /></th>
+				</tr>
+			</thead>
+			<tbody>
+				<mx:bloc id="downloads">
+				<tr>
+					<mx:bloc id="order">
+						<td><a mXattribut="href:href;hreflang:hreflang;title:title" class="accountDownloadsListOrder" ><span><mx:text id="label" /></span></a></td>
+					</mx:bloc id="order"></td>
+					<td><mx:text id="date" /></td>
+					<td><mx:text id="title" /></td>
+					<td><mx:text id="type" /> (<mx:text id="extension" />)</td>
+					<td><mx:text id="weight" /></td>
+					<td><mx:text id="status" /></td>
+					<td><mx:text id="nb_downloads" /></td>
+    			<td><mx:text id="maximum" /></td>
+    			<td><mx:text id="duree" /></td>
+					<mx:bloc id="download">
+						<td><mx:bloc id="link"><a mXattribut="href:href;hreflang:hreflang;title:title" class="accountDownloadsListLink"><span><mx:text id="label" /></span></a></mx:bloc id="link"></td>
+					</mx:bloc id="download">
+				</tr>
+				</mx:bloc id="downloads">
+			</tbody>
+		</table>
+	</div>
+	</mx:bloc id="downloads_list">
+
+	<!--  Bloc qui affiche un formulaire pour sélectionner le nombre de fichier à afficher  -->
+	<mx:bloc id="nbFile">
+		<div class="row nbFile">
+			<form method="post" mXattribut="action:action;id:idForm;">
+				<label mXattribut="for:for;"><mx:text id="label"/></label>
+				<select mxAttribut="name:name;id:id;onchange:onchange;">
+					<mx:bloc id="options">
+						<option mXattribut="value:value;selected:selected;"><mx:text id="option"/></option>
+					</mx:bloc id="options">
+				</select>
+			</form>
+		</div>
+	</mx:bloc id="nbFile">
+	
+	<mx:bloc id="pager">
+    <mx:bloc id="first">&lt;&lt;</mx:bloc id="first">
+    <mx:bloc id="previous">&lt;</mx:bloc id="previous">
+    <mx:bloc id="last">&gt;&gt;</mx:bloc id="last">
+    <mx:bloc id="next">&gt;</mx:bloc id="next">
+    <mx:bloc id="separator">&nbsp;</mx:bloc id="separator">
+    <div class="pager"><mx:bloc id="items"><mx:text id="spacer" /><a mXattribut="href:href;hreflang:hreflang;title:title;class:class"><mx:text id="item" /></a></mx:bloc id="items"></div>
+  </mx:bloc id="pager">
+</div>
+<div id="accountDownloadsList">
+	<h1><mx:text id="title" /></h1>
+
+	<mx:bloc id="msg">
+		<mx:text id="msg" />
+	</mx:bloc id="msg">
+	
+	<mx:bloc id="no_result">
+		<mx:text id="no_result" />
+	</mx:bloc id="no_result">
+	
+	<mx:bloc id="downloads_list">
+	<div id="downloadsList">
+		<h2><mx:text id="download_list_title" /></h2>
+		<table>
+			<thead>
+				<tr>
+					<th><mx:text id="num_order" /></th>
+					<th><mx:text id="date" /></th>
+					<th><mx:text id="title" /></th>
+					<th><mx:text id="type" /></th>
+					<th><mx:text id="weight" /></th>
+					<th><mx:text id="status" /></th>
+					<th><mx:text id="nb_downloads" /></th>
+					<th><mx:text id="maximum" /></th>
+					<th><mx:text id="duree" /></th>
+					<th mXattribut="colspan:colspan_actions"><mx:text id="actions" /></th>
+				</tr>
+			</thead>
+			<tbody>
+				<mx:bloc id="downloads">
+				<tr>
+					<mx:bloc id="order">
+						<td><a mXattribut="href:href;hreflang:hreflang;title:title" class="accountDownloadsListOrder" ><span><mx:text id="label" /></span></a></td>
+					</mx:bloc id="order"></td>
+					<td><mx:text id="date" /></td>
+					<td><mx:text id="title" /></td>
+					<td><mx:text id="type" /> (<mx:text id="extension" />)</td>
+					<td><mx:text id="weight" /></td>
+					<td><mx:text id="status" /></td>
+					<td><mx:text id="nb_downloads" /></td>
+    			<td><mx:text id="maximum" /></td>
+    			<td><mx:text id="duree" /></td>
+					<mx:bloc id="download">
+						<td><mx:bloc id="link"><a mXattribut="href:href;hreflang:hreflang;title:title" class="accountDownloadsListLink"><span><mx:text id="label" /></span></a></mx:bloc id="link"></td>
+					</mx:bloc id="download">
+				</tr>
+				</mx:bloc id="downloads">
+			</tbody>
+		</table>
+	</div>
+	</mx:bloc id="downloads_list">
+
+	<!--  Bloc qui affiche un formulaire pour sélectionner le nombre de fichier à afficher  -->
+	<mx:bloc id="nbFile">
+		<div class="row nbFile">
+			<form method="post" mXattribut="action:action;id:idForm;">
+				<label mXattribut="for:for;"><mx:text id="label"/></label>
+				<select mxAttribut="name:name;id:id;onchange:onchange;">
+					<mx:bloc id="options">
+						<option mXattribut="value:value;selected:selected;"><mx:text id="option"/></option>
+					</mx:bloc id="options">
+				</select>
+			</form>
+		</div>
+	</mx:bloc id="nbFile">
+	
+	<mx:bloc id="pager">
+    <mx:bloc id="first">&lt;&lt;</mx:bloc id="first">
+    <mx:bloc id="previous">&lt;</mx:bloc id="previous">
+    <mx:bloc id="last">&gt;&gt;</mx:bloc id="last">
+    <mx:bloc id="next">&gt;</mx:bloc id="next">
+    <mx:bloc id="separator">&nbsp;</mx:bloc id="separator">
+    <div class="pager"><mx:bloc id="items"><mx:text id="spacer" /><a mXattribut="href:href;hreflang:hreflang;title:title;class:class"><mx:text id="item" /></a></mx:bloc id="items"></div>
+  </mx:bloc id="pager">
+</div>

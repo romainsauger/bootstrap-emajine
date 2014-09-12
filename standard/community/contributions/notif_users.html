@@ -1,0 +1,31 @@
+<!-- Bloc qui contient l'objet du mail envoyé au visiteur pour lui dire que sa contribution a été accepté -->
+<mx:bloc id="objet1">{SITENAME} : Votre contribution a &eacute;t&eacute; publi&eacute;e</mx:bloc id="objet1">
+<!-- Bloc qui contient l'objet du mail envoyé au visiteur pour lui dire que sa contribution a été rejeté -->
+<mx:bloc id="objet2">{SITENAME} : Votre contribution a &eacute;t&eacute; refus&eacute;e</mx:bloc id="objet2">
+
+<!-- Bloc qui contient le message qui sera envoyé au visiteur pour lui dire que sa contribution a été accepté -->
+<mx:bloc id="msg1">
+	<p>Bonjour</p>
+	<p>Votre contribution "<mx:text id="elementLabel" />" a &eacute;t&eacute; publi&eacute;e sur le site <mx:text id="site" />.<br />
+		Celle-ci est accessible en utilisant l'URL suivante :<br />
+		<a href="<mx:text id="elementUrl" />"><mx:text id="elementUrl" /></a>
+	</p>
+	<p>
+		<mx:text id="content" />
+	</p>
+	<p>Nous vous remercions de votre contribution.</p>
+
+	<p>A bient&ocirc;t,</p>
+</mx:bloc id="msg1">
+
+<!-- Bloc qui contient le message qui sera envoyé au visiteur pour lui dire que sa contribution a été rejeté -->
+<mx:bloc id="msg2">
+	<p>Bonjour</p>
+	<p>Votre contribution "<mx:text id="elementLabel" />" ne sera pas publiée sur le site <mx:text id="site" />.</p>
+	<p>
+		<mx:text id="content" />
+	</p>
+	<p>Nous vous remercions cependant de votre contribution.</p>
+
+	<p>A bient&ocirc;t,</p>
+</mx:bloc id="msg2">

@@ -1,0 +1,83 @@
+<div class="adsEntryDetailDefault" >
+
+		<!--General entry label-->
+		<mx:bloc id="label">
+			<div class="additionnalsProperties" >
+				<h3><mx:text id="label" /></h3>
+			</div>
+		</mx:bloc id="label">
+		
+		<!--Sélectionnez la région dans laquelle se trouve votre bien-->
+		<mx:bloc id="field_2">
+			<div class="additionnalsProperties" >
+				<span class="label" >Région dans laquelle se trouve l'annonce : </span><mx:text id="field_2" />
+			</div>
+		</mx:bloc id="field_2">
+		
+		<!--Indiquez la description complète de votre annonce-->
+		<mx:bloc id="field_3">
+			<div class="additionnalsProperties" >
+				<span class="label" >Description de l'annonce :</span> <mx:text id="field_3" />
+			</div>
+		</mx:bloc id="field_3">
+		
+		<!--Indiquez le prix de vente-->
+		<mx:bloc id="field_4">
+			<div class="additionnalsProperties" >
+				<span class="label" >Prix de vente : </span><mx:text id="field_4" /> euros
+			</div>
+		</mx:bloc id="field_4">
+		
+		<!--Sélectionnez la localisation de votre bien-->
+		<mx:bloc id="field_5">
+			<div class="additionnalsProperties" >
+				<span class="label" >Localisation de l'annonce :</span> <mx:text id="field_5" />
+			</div>
+		</mx:bloc id="field_5">
+		
+		<!--Sélectionnez vos visuels-->
+		<mx:bloc id="field_6">
+			<div class="additionnalsProperties" >
+				<!--<mx:bloc id="display_type">fullsize</mx:bloc id="display_type"> Type d'affichage de l'image : thumbnail / fullsize-->
+				<mx:text id="field_6" />
+			</div>
+		</mx:bloc id="field_6">
+		
+	<!-- Bloc d'affichage des coordonnees de l'annonceur -->
+	<mx:bloc id="contact_coords">
+		<div id="contactCoords">
+			<mx:bloc id="link">
+				<a mXattribut="href:href;hreflang:hreflang;title:title" class="contactCoordsLink" ><span><mx:text id="label" /></span></a>
+			</mx:bloc id="link">
+			<mx:bloc id="coords">
+				<div id="coords" >
+					<mx:text id="coords" />
+				</div>
+			</mx:bloc id="coords">
+		</div>	
+	</mx:bloc id="contact_coords">
+		
+	<!-- Bloc d'affichage du formulaire de prise de contact -->
+	<mx:bloc id="contact_form">
+		<div id="contactForm">
+			<mx:bloc id="link">
+				<a mXattribut="href:href;hreflang:hreflang;title:title" class="contactFormLink"><span><mx:text id="label" /></span></a>
+			</mx:bloc id="link">
+			<mx:bloc id="form">
+				<mx:text id="form" />
+			</mx:bloc id="form">
+		</div>	
+	</mx:bloc id="contact_form">
+		
+		<!-- Lien pour revenir  la catgorie -->
+		<a mXattribut="href:href;hreflang:hreflang;title:title"><mx:text id="back" /></a>
+	
+	<!--Gestion d'un pager pour aller directement d'une annonce a l'autre -->
+	<mx:bloc id="pager">
+		<div class="pager">
+			<mx:bloc id="previous"><a mXattribut="href:href;hreflang:hreflang;title:title" class="adsEntryDetailDefaultPreviousAds" ><span><mx:text id="previous_ads" /></span></a></mx:bloc id="previous">
+			<mx:bloc id="next"><a mXattribut="href:href;hreflang:hreflang;title:title" class="adsEntryDetailDefaultNextAds"><span><mx:text id="next_ads" /></span></a></mx:bloc id="next">
+		</div>
+	</mx:bloc id="pager">
+				
+</div>		

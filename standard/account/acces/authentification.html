@@ -1,0 +1,42 @@
+<mx:bloc id="content">
+	<div id="authentification">
+		<form method="post" mXattribut="action:action" id="authentificationform">
+			<fieldset>
+				<legend>Identifiez-vous</legend>
+				<div class="row username">
+					<span class="label">
+						<label for="username"> <mx:text id="login_text" /></label>
+					</span>
+					<span class="fields"> 
+						<input type="text" name="username" id="username" />
+					</span>
+				</div>
+				<div class="row password">
+					<span class="label">
+						<label for="password"><mx:text id="password_text" /></label>
+					</span>
+					<span class="fields">
+						<input type="password" name="password" id="password" />
+					</span>
+				</div>
+				<div class="submit1">
+					<input type="submit" mXattribut="value:submit_value" />
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Rappel du mot de passe</legend>
+				<div class="row email">
+					<span class="label">
+						<label for="email">E-mail</label>
+					</span>
+					<span class="fields">
+						<input type="text" name="email" id="email" />
+					</span>
+				</div>
+				<div class="submit2">
+					<input type="submit" mXattribut="value:submit_value" />
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</mx:bloc id="content">

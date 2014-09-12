@@ -1,0 +1,46 @@
+<div id="mediaDownloads">
+	 <h2><mx:text id="title" /></h2>
+	 <span><mx:text id="description" /></span>
+	<mx:bloc : id="search">
+		<div id="zsearch">
+			<mx:text id="formulaire" />
+		</div>
+	</mx:bloc id="search">
+
+	<mx:bloc id="liste">
+		<div id="zliste">
+			<table>
+				<thead>
+					<td></td>
+					<td><a mXattribut="href:hreflabel;hreflang:hreflang;title:titlename;class:classnom" class="mediaDownloadsLabel" ><span><mx:text id="label"/></span></a></td>
+					<!--<td><a mXattribut="href:hrefdesc;hreflang:hreflang;title:titlename;class:classdescription" class="mediaDownloadsDescription" ><span><mx:text id="description"/></span></a></td>-->
+					<!--<td><a mXattribut="href:hrefcredits;hreflang:hreflang;title:titlename;class:classcredits" class="mediaDownloadsAuthor" ><span><mx:text id="autor"/></span></a></td>-->
+					<td><a mXattribut="href:hrefdate;hreflang:hreflang;title:titlename;class:classdate" class="mediaDownloadsLabel" class="mediaDownloadsDate"  ><span><mx:text id="date"/></span></a></td>
+					<td>&nbsp;</td>
+				</thead>
+				<mx:bloc id="medias">
+					<tr>
+						<td><mx:text id="visuel" /></td>
+						<td><mx:text id="name"/></td>
+						<!--<td><mx:text id="description"/></td>-->
+						<!--<td><mx:text id="autor"/></td>-->
+						<td><mx:text id="date"/></td>
+						<td><a mxAttribut="href:href;title:title;hreflang:hreflang" class="mediaDownloadsLink" ><span><mx:text id="label"/></span></a></td>
+					</tr>
+				</mx:bloc id="medias">
+			</table>
+		</div>
+		<mx:bloc id="pager">
+			<mx:bloc id="first">&lt;&lt;</mx:bloc id="first">
+			<mx:bloc id="previous">&lt;</mx:bloc id="previous">
+			<mx:bloc id="last">&gt;&gt;</mx:bloc id="last">
+			<mx:bloc id="next">&gt;</mx:bloc id="next">
+			<mx:bloc id="separator">&nbsp;</mx:bloc id="separator">
+			<div class="pager"><mx:bloc id="items"><mx:text id="spacer" /><a mXattribut="href:href;hreflang:hreflang;title:title;class:class;onclick:onclick"><mx:text id="item" /></a></mx:bloc id="items"></div>
+		</mx:bloc id="pager">
+	</mx:bloc id="liste">
+	
+	<mx:bloc id="no_result">
+		<div class="noResult" ><mx:text id="message" /></div>
+	</mx:bloc id="no_result">
+</div>

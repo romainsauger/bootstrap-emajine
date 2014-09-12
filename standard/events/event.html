@@ -1,0 +1,68 @@
+<div id="event" mXattribut="class:class">
+<h1><mx:text id="event_title" /></h1>
+  <div id="chapo">
+    <mx:bloc id="picture"><div class="chapoPicture"><mx:text id="picture" /></div></mx:bloc id="picture">
+    <mx:bloc id="date"><div class="date"><mx:text id="date" /></div></mx:bloc id="date">
+    <mx:bloc id="types"><div class="types"><mx:bloc id="type"><mx:text id="type" /> </mx:bloc id="type"></div></mx:bloc id="types">
+    <mx:bloc id="author"><div class="author"><mx:text id="event_author_label" /> : <mx:text id="event_author" /></div></mx:bloc id="author">
+    <mx:bloc id="description"><div class="chapo_description"><mx:text id="description" /></div></mx:bloc id="description">
+    <hr class="clear" /> 
+  </div>
+  
+  <div id="text">
+    <mx:text id="article" />
+  </div>
+    
+  <mx:bloc id="view_more">
+    <div id="infos">
+      <h3><mx:text id="info_title" /></h3>
+      <div><mx:text id="view_more" /></div>
+    </div>
+  </mx:bloc id="view_more">
+  
+  <mx:bloc id="view_more_links">
+    <div id="links">
+      <h3><mx:text id="links_title" /></h3>
+      <ul>
+        <mx:bloc id="links">
+          <li><a mXattribut="href:href;hreflang:hreflang;title:title"><mx:text id="link" /></a></li>
+        </mx:bloc id="links">
+      </ul>
+    </div>
+  </mx:bloc id="view_more_links">
+<div class="back"><mx:referer title="Revenir à la page précédente" content="Retour" /></div>
+	<mx:bloc id="author"><mx:text id="author" /></mx:bloc id="author">
+	<ul class="articleAction">
+    	<li class="react"><mx:reacttoarticle title="R&eacute;agir &agrave;l'article" content="R&eacute;agir" /></li>
+    	<li class="send"><mx:sendarticle title="Envoyer l'article" content="Envoyer l'article" /></li>
+    	<mx:bloc id="links_comments">
+    		<mx:bloc id="view_comments"><li><a mXattribut="href:href;hreflang:hreflang;title:title" class="eventViewComments" ><span><mx:text id="view_comments" /></span></a></li></mx:bloc id="view_comments">
+    		<mx:bloc id="add_comment"><li><a mXattribut="href:href;hreflang:hreflang;title:title" class="eventAddComments" ><span><mx:text id="add_comment" /></span></a></li></mx:bloc id="add_comment">
+    	</mx:bloc id="links_comments">
+	</ul>
+	
+	<!-- Donnees relative aux notes -->
+	<mx:bloc id="ratings_datas">
+		<div class="ratingsDatas" ><mx:text id="content" /></div>
+	</mx:bloc id="ratings_datas">
+
+	<!-- Liste des commentaires -->
+	<mx:bloc id="list_comments">
+		<div class="listComments" ><mx:text id="content" /></div>
+	</mx:bloc id="list_comments">
+
+	<!-- Formulaire d'ajout de commentaire -->
+	<mx:bloc id="form_add_comment">
+		<div class="addComments" ><mx:text id="content" /></div>
+	</mx:bloc id="form_add_comment">
+
+	<div class="pager">
+		<mx:bloc id="previous">
+			<a mXattribut="href:href;hreflang:hreflang;title:title" class="PagerPrevious" ><span><mx:text id="previous" /></span></a>
+		</mx:bloc id="previous">
+		<mx:bloc id="next">
+			<a mXattribut="href:href;hreflang:hreflang;title:title" class="PagerNext"><span><mx:text id="next" /></span></a>
+		</mx:bloc id="next">
+	</div>
+	
+</div>

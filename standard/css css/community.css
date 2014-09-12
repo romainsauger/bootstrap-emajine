@@ -1,0 +1,213 @@
+/* --------------------
+NOTATION, COMMENTAIRES
+-----------------------*/
+.post{
+	border-bottom:1px #cccccc dotted;
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+}
+.post_picture_resume{
+	float:left;
+	margin:5px;
+}
+a.commentsDatasLink{
+}
+.ratingsDatas{
+	font-weight: bold;
+}
+	.ratingsDatas label{
+		width: auto;
+	}
+	.ratingsDatas fieldset{
+		border:none;
+		padding: 0;
+		margin: 0;
+	}
+.lastCommentDate{	
+	font-style:italic;
+	margin: 0 6px;
+}
+.BlogCommentsLink{
+	display:block;
+}
+.BlogCommentsDate{
+	display:inline;
+}
+	.BlogCommentsDate span{
+		font-style:italic;
+	}
+.BlogCommentsCommenter{
+	border-left: 1px silver dotted;
+	margin-left: 5px;
+	padding-left:5px;	
+	display:inline;
+}
+.lastCommenter{	
+}
+li.viewComments{
+}
+li.addComments{
+}
+div.listComments{
+}
+.addComments{
+}
+a.commentPagerPrevious{
+}
+.post_date{
+	font-weight: bold;
+}
+.post_date{
+	font-weight: bold;
+}
+.post_author{
+	font-style: italic;
+}
+#produits_commentaires{
+	clear: both;
+}
+a.commentPagerNext{
+}
+#commentsDatas{
+	font-size: .9em;	
+}
+	#commentsDatas .commentsDatasLink{
+	}
+	#commentsDatas .lastCommentDate{
+	}
+	#commentsDatas .lastCommenter{
+	}
+.BlogBack{
+	text-align:center;
+	margin-bottom: 10px;
+	display:block;
+}
+.postAuthor{
+	font-style: italic;;
+}
+#formAddComment label{
+	width:125px;
+}
+	#listComments .comment{
+		margin: 10px;
+		font-size: 1.1em;
+		background:#eeeeee;
+		border:1px #e7e7e7 solid;
+		padding:10px;
+	}
+		#listComments .comment p{
+			margin:0;
+		}
+	#listComments h3{
+		font-size: 1.4em;
+	}
+	#listComments h6{
+		color:#666666;
+		margin: 0;
+	}
+	#listComments .commentSite{
+		border-left: 1px #666666 dotted;
+		padding-left: 5px;
+	}
+	#listComments .author{
+		font-weight:bold;
+	}
+/* ----------------
+ETOILES DES NOTATIONS
+------------------*/
+.ui-stars-cancel,
+.ui-stars-star {
+	float:left;
+	width:17px;
+	height:15px;
+	text-indent:-999em;
+	cursor:pointer;
+	display:block;
+	background:transparent;
+	overflow:hidden;
+}
+	.ui-stars-cancel,
+	.ui-stars-cancel a {
+		background:url(/common_images/skin001/star-delete.gif) no-repeat 0 -16px;
+	}
+	.ui-stars-star,
+	.ui-stars-star a {
+		background:url(/common_images/skin001/star.gif) no-repeat 0 0px;
+	}
+	.ui-stars-cancel a,
+	.ui-stars-star a {
+		display:block;
+		width:16px;
+		height:100%;
+		background-position:0 0px;
+	}
+.ui-stars-star-on a {
+	background-position:0 -16px!important;
+}
+.ui-stars-star-hover a {
+	background-position:0 -32px;
+}
+.ui-stars-cancel-hover a {
+	background-position:0 -16px;
+}
+.ui-stars-cancel-disabled a,
+.ui-stars-star-disabled,
+.ui-stars-star-disabled a {
+	cursor:default !important;
+}
+.ui-stars-star {
+	background:transparent!important;
+	overflow:hidden!important;
+}
+
+/* ----------------
+MISE EN AVANT DE BILLETS
+------------------*/
+.widgetHighlightPost{
+	border-bottom: 1px #CCC dotted;
+	margin-bottom:5px; 
+	padding-bottom:5px; 
+	line-height: 150%;
+}
+.widgetHighlightPost label {
+	float:left;
+}
+.widgetTagCloudAuthor span{
+	font-style:italic;
+}
+#contents .widgetHighlightPost  {
+	background: url("/common_images/skins/DefaultSkins1.5/product-right.png") repeat-y right top;
+	float: left;
+	position: relative;
+	color: #666;
+	border-bottom:none;
+}
+#contents .widgetHighlightPostContainer  {
+	width: 190px;
+	background: url("/common_images/skins/DefaultSkins1.5/product-bottom.png") repeat-x scroll left bottom transparent;
+	height: 250px;
+	padding: 0px 15px 0px;
+}
+
+/* ----------------
+NUAGE DE TAGS
+------------------*/
+.tagcloud{
+	overflow:hidden;
+}
+
+/* ------
+CATALOGUE
+--------*/
+#listComments{
+	clear: both;
+}
+ul.product_action{
+	margin:0;
+}
+	ul.product_action li{
+		background:none;
+		display:inline;
+		padding:0;
+		margin-right: 15px;
+	}

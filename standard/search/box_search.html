@@ -1,0 +1,24 @@
+<div class="widget widgetSearch" mXattribut="class:box_class">
+	<mx:bloc id="widgetTitle"><h4><mx:text id="widgetTitle" /></h4></mx:bloc id="widgetTitle">
+  
+	<div class="widgetContainer">	
+  		<form id="searchform" method="post" mXattribut="action:action">
+    		<fieldset>
+      		<div class="row">
+      		<label for="search_input_box">Rechercher</label>
+      		<input type="text" id="search_input_box" name="q" class="wordsbox" />
+      		<mx:bloc id="hidden_configuration"><input type="hidden" mXattribut="name:name;value:value" /></mx:bloc id="hidden_configuration">
+      		</div>
+    		</fieldset>
+      		<div class="submit">
+        		<input type="submit" name="searchbutton" mXattribut="value:searchsubmitvalue" />
+      		</div>
+  		</form>
+  	</div>
+  
+  	<mx:bloc id="advanced">
+    	<a mXattribut="href:href;hreflang:hreflang:title:title" class="widgetSearchAdvanced" ><span><mx:text id="advanced" /></span></a>
+  	</mx:bloc id="advanced">
+ 
+	<div class="widgetFooter"></div>  
+</div>

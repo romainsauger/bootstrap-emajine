@@ -1,0 +1,28 @@
+<div id="accountAccesConfiguration">
+	<h1><mx:text id="title" /></h1>
+		<mx:bloc id="form">
+			<form method="post" mXattribut="action:action" id="form">
+				<fieldset>
+					<mx:bloc id="items">
+						<dl>
+							<dt><mx:text id="field_name" />&nbsp;:&nbsp;<mx:text id="value" /></dt>
+							<dd>
+								<mx:text id="description" />
+							</dd>
+						</dl>
+					</mx:bloc id="items">
+					<div class="clear">&nbsp;</div>
+					<div class="submit">
+						<mx:bloc id="submit">
+								<input type="submit"  mXattribut="name:name;value:value" class="valid" />
+						</mx:bloc id="submit">
+					</div>
+					<mx:bloc id="hidden">
+						<input type="hidden" mXattribut="name:name;value:value" />
+					</mx:bloc id="hidden">
+				</fieldset>
+			</form>
+	</mx:bloc id="form">
+	
+	<mx:text id="datas" />
+</div>

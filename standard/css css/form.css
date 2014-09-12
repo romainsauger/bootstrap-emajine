@@ -1,0 +1,152 @@
+/* ----------------------------
+FORMULAIRE GENERIQUE
+------------------------------*/
+#forms{
+}
+div.formulaire{
+}
+fieldset{
+	margin:10px;
+	padding:5px;
+}
+legend{
+	color:#666666;
+	font-size:1.1em;
+	font-weight: bold;
+	padding:0 5px;
+}
+.row{
+	clear:both;
+	margin: 5px;
+	padding: 5px;
+}
+label{
+	float:left;
+	width:200px;
+}
+input, select, textarea{
+	background: #fff url(/common_images/skin001/fd_elt_form.gif) no-repeat top left;
+	border: 1px solid #666666;
+	text-align:left!important;
+	width: auto;
+}
+textarea{
+	width:50%;
+}
+input:focus, select:focus, textarea:focus{
+	background: #ffffff;
+}
+input.wordsbox{
+	background:#fff url(/common_images/skin001/search.png) no-repeat 5px 50%;
+	padding:0 0 0 20px;
+}
+input.wordsbox:focus{
+}
+.widget .group_multi_radio, 
+.widget .group_multi_checkbox, 
+.widget .group_multi, 
+.widget .groupMultiRadio,
+.widget .groupMulticheckbox,
+.widget .groupMulti{
+	padding:0 0 0 10px;
+}
+.group_multi_radio, 
+.group_multi_checkbox, 
+.group_multi, 
+.groupMultiRadio,
+.groupMulticheckbox,
+.groupMulti{
+		clear: both;
+		display: block;
+		padding: 0 0 0 200px;
+		position: relative;
+		top: -15px;
+}
+	.group_multi_radio p,
+	.groupMultiRadio p,
+	.group_multi_checkbox p,
+	.groupMulticheckbox p, 
+	.group_multi p,
+	.groupMulti p{
+		margin:0;
+	}
+.multi_radio,
+.multiRadio, 
+.multi_checkbox,
+.multiCheckbox{
+	display:block;
+}
+	.multi_radio label, 
+	.multiRadio label,
+	.multi_checkbox label,
+	.multiCheckbox label{
+		float:none;
+	}
+.form_interval{
+	padding:0 0 0 200px;
+	position:relative;
+	top:-18px;
+}
+	.form_interval *{
+		float:none;
+	}
+	
+/* ----------------------------
+CORRECTIF INTERNET EXPLORER
+------------------------------*/
+input.radio, input.checkbox, input.radio:focus, input.checkbox:focus{
+	background: transparent;
+	border: 0;
+	width:auto!important;
+	margin-right: 5px;
+}
+
+/* ----------------------------
+BOUTONS DE VALIDATION
+------------------------------*/
+.submit{
+	margin:5px 0 0 0;
+	text-align: center;
+}
+
+.submit input{
+	background:#ECE8E3;
+	padding:2px 3px;
+}
+
+.submit_top{
+	padding:4px 2px;
+	float:left;
+}
+
+/* ------------
+REPONSE DU QCM
+---------------*/
+#formsQcm .response{
+	color:#ff0000;
+}
+#formsQcm .good{
+	color:#44bb34;
+}
+
+/* ------------
+EN CAS D'ERREUR
+---------------*/
+.errorForm,
+.obligatory,
+.errorLog{
+	color:#ff0000;
+}
+.row .error input, .error select, .error textarea{
+	background:#ffefef!important;
+	border: 1px solid #bb3434!important;
+	color: #bb3434!important;
+}
+.label.error{
+	color: #bb3434!important;
+}
+div.formCreator_header{
+}
+div.formCreator_footer{
+}
+

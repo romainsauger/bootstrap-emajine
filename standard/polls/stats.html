@@ -1,0 +1,60 @@
+<div id="pollStats">
+
+	<h1><mx:text id="header"/></h1>
+	
+	<div class="pollStatsDescription" ><mx:text id="description"/></div>
+	
+	<div class="pollStatsSubmit" ><mx:text id="submit_count"/>&nbsp;<mx:text id="submit_count_phrase"/></div>
+	
+	<mx:bloc id="back">
+		<a mXattribut="href:href;hreflang:hreflang;title:title;" class="pollStatsBack" ><span><mx:text id="back"/></span></a>
+	</mx:bloc id="back">
+	
+	<mx:bloc id="elements">
+		<fieldset class="Answers" >
+			<p><mx:text id="question"/></p>
+				
+			<mx:bloc id="answers">
+				<div><mx:text id="answers_label"/></div>
+				<ul>
+					<mx:bloc id="answer">
+						<li><mx:text id="answer"/>&nbsp;:&nbsp;<mx:text id="count"/></li>
+					</mx:bloc id="answer">
+					<mx:bloc id="other">
+						<li>
+							<mx:text id="answer"/>&nbsp;:&nbsp;<mx:text id="count"/>
+							<mx:bloc id="other_link">
+								<a mXattribut="href:href;hreflang:hreflang;title:title;"><span><mx:text id="link_label"/></span></a>
+							</mx:bloc id="other_link">
+						</li>
+					</mx:bloc id="other">
+				</ul>
+			</mx:bloc id="answers">
+
+			<mx:bloc id="comments">
+				<a mXattribut="href:href;hreflang:hreflang;title:title;" class="pollStatsComments" ><span><mx:text id="comments"/></span></a>
+			</mx:bloc id="comments">
+						
+			<mx:bloc id="graph">
+				<div class="pollGraph">
+					<img mXattribut="src:src;alt:alt" class="poll_graph"/>
+				</div>
+			</mx:bloc id="graph">
+			
+			<mx:bloc id="graph_html">
+				<div class="pollHtmlGraph">
+					<mx:bloc id="bar">
+						<span class="pollHtmlGraphAnswer" ><mx:text id="answer"/></span>&nbsp;:&nbsp;<span class="pollHtmlGraphCount" ><mx:text id="count"/></span>
+						<div mXattribut="style:width">&nbsp;</div>
+					</mx:bloc id="bar">
+				</div>
+			</mx:bloc id="graph_html">
+		</fieldset><hr />
+	</mx:bloc id="elements">
+	
+	<mx:bloc id="no_elements">
+		<hr/>
+		<mx:text id="no_elements"/>
+	</mx:bloc id="no_elements">
+	
+</div>

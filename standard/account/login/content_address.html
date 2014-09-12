@@ -1,0 +1,40 @@
+<div id="accountAddress" class="content">
+	<h1><mx:text id="title" /></h1>
+	
+	<mx:bloc id="address_add">
+		<a mXattribut="href:href;hreflang:hreflang;title:title" class="addressAdd" ><span><mx:text id="address_add" /></span></a>
+	</mx:bloc id="address_add">
+	
+	<ul>
+		<mx:bloc id="default_address">
+		<li class="defaultAddress" >
+			<dl>
+				<dt><mx:text id="label" /></dt> 
+				<dd>
+					<address><mx:text id="address" /></address>
+					<a mXattribut="href:href;hreflang:hreflang;title:title"><span><mx:text id="edit" /></span></a>
+				</dd>
+			</dl>
+		</li>
+		</mx:bloc id="default_address">
+		
+		<mx:bloc id="address_list">
+			<mx:bloc id="address">
+			<li id="addressList">
+				<dl>
+					<dt><mx:text id="address_label" /></dt>
+					<dd>
+						<address><mx:text id="detail" /></address>
+						<a mXattribut="href:hrefedit;hreflang:hreflangedit;title:titleedit" class="addressListTitleEdit" ><span><mx:text id="edit" /></span></a>
+						<a mXattribut="href:hrefdelete;hreflang:hreflangdelete;title:titledelete" onclick="return window.confirm('<mx:text id="confirmation_message" />')" class="addressListTitleDelete" ><span><mx:text id="delete" /></span></a>
+					</dd>
+				</dl>
+			</li>
+			</mx:bloc id="address">
+		</mx:bloc id="address_list">
+	</ul>
+	
+	<mx:bloc id="address_edit">
+		<mx:text id="datas_form" />
+	</mx:bloc id="address_edit">
+</div>

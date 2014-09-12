@@ -1,0 +1,114 @@
+<mx:bloc id="event_search">
+  <form class="event_search" id="event_search" method="post" mXattribut="action:action">
+    <fieldset>
+      <legend><mx:text id="legend" /></legend>
+      <div class="row">
+        <label mXattribut="for:dstart_for"><mx:text id="dstart_label" /></label><input type="text" mXattribut="name:dstart_name;value:dstart_value;id:dstart_id" />
+        <a mXattribut="href:href_cal;hreflang:hreflang_cal;onclick:onclick_cal;title:title_cal"><img src="/common_images/calendar.jpg" alt="Insérer une date" /></a>
+      </div>
+      <div class="row">
+        <label for="event_period_day" ><mx:text id="event_period_day_label" /></label><input id="event_period_day" type="radio" name="period" value="day" mXattribut="checked:event_period_day_checked" class="radio"/>
+      </div>
+      <div class="row">
+        <label for="event_period_week" ><mx:text id="event_period_week_label" /></label><input id="event_period_week" type="radio" name="period" value="week" mXattribut="checked:event_period_week_checked" class="radio" />
+      </div>
+      <div class="row">
+        <label for="event_period_month" ><mx:text id="event_period_month_label" /></label><input id="event_period_month" type="radio" name="period" value="month" mXattribut="checked:event_period_month_checked" class="radio" />
+      </div>
+      <div class="row">
+        <label for="event_period_year" ><mx:text id="event_period_year_label" /></label><input id="event_period_year" type="radio" name="period" value="year" mXattribut="checked:event_period_year_checked" class="radio" />
+      </div>
+      <div class="row">
+        <label for="event_period_7next" ><mx:text id="event_period_7next_label" /></label><input id="event_period_7next" type="radio" name="period" value="7next" mXattribut="checked:event_period_7next_checked" class="radio" />
+      </div>
+      <div class="row">
+        <label for="event_period_30next" ><mx:text id="event_period_30next_label" /></label><input id="event_period_30next" type="radio" name="period" value="30next" mXattribut="checked:event_period_30next_checked" class="radio" />
+      </div>
+      <div class="row">
+        <label for="event_period_365next" ><mx:text id="event_period_365next_label" /></label><input id="event_period_365next" type="radio" name="period" value="365next" mXattribut="checked:event_period_365next_checked" class="radio" />
+      </div>
+      <div class="row">
+        <label for="event_period_allnext" ><mx:text id="event_period_allnext_label" /></label><input id="event_period_allnext" type="radio" name="period" value="allnext" mXattribut="checked:event_period_allnext_checked" class="radio" />
+      </div>
+      <mx:bloc id="event_type">
+      <div class="row">
+        <label for="event_type" ><mx:text id="event_type_label" /></label>
+        <select id="event_type" name="type">
+          <mx:bloc id="event_type_option">
+            <option mxAttribut="value:event_type_option_value;selected:event_type_option_selected"><mx:text id="event_type_option" /></option>
+          </mx:bloc id="event_type_option">
+        </select>
+      </div>
+      </mx:bloc id="event_type">
+      <div class="row">
+        <label for="event_keywords" ><mx:text id="event_keywords_label" /></label><input id="event_keywords" type="text" name="keywords" mXattribut="value:keywords_value" class="wordsbox"/>
+      </div>
+    </fieldset>
+      <div class="submit">
+        <input type="submit" mXattribut="name:submit_name;value:submit_value" />
+      </div>
+  </form>
+	<div class="period">
+  		<a mXattribut="href:href_previous_period;hreflang:hreflang_previous_period;title:title_previous_period"><span class="previous_period" ><mx:text id="label_previous_period" /></span></a>
+  		<a mXattribut="href:href_today;hreflang:hreflang_today;title:title_today"><span class="label_today" ><mx:text id="label_today" /></span></a>
+  		<a mXattribut="href:href_next_period;hreflang:hreflang_next_period;title:title_next_period"><span class="next_period" ><mx:text id="label_next_period" /></span></a>
+	</div>
+	
+</mx:bloc id="event_search">
+<mx:bloc id="event_list">
+  <div id="event_list">
+    <h1><mx:text id="event_list_title" /></h1>
+    <mx:bloc id="event_type_memo">
+      <div class="event_list_memo"><mx:text id="event_type_memo" /></div>
+    </mx:bloc id="event_type_memo">
+    <mx:bloc id="event_keywords_memo">
+      <div class="event_list_memo"><mx:text id="event_keywords_memo" /></div>
+    </mx:bloc id="event_keywords_memo">
+    <mx:bloc id="event">
+      <div mXattribut="id:idevent;class:class" class="event">
+        <mx:text id="chapo_picture" />
+        <h2><mx:text id="event_title" /></h2>
+        <div class="date"><mx:text id="event_date" /></div>
+        <div class="types">
+          <mx:bloc id="type"><mx:text id="event_type" /> </mx:bloc id="type">
+        </div>
+        <mx:bloc id="author">
+          <div class="author"><mx:text id="event_author_label" /> : <mx:text id="event_author" /></div>
+        </mx:bloc id="author">
+        <p class="chapo"><mx:text id="chapo" /></p>
+        <div class="linksmore"><a mXattribut="href:href;hreflang:hreflang;title:title"><mx:text id="en_savoir_plus" /></a></div>
+		<!-- Donnees relative aux commentaires           -->
+			<mx:bloc id="comments_datas">
+				<mx:bloc id="link"><a mXattribut="href:href;hreflang:hreflang;title:title"><mx:text id="label" /></a></mx:bloc id="link">
+				<mx:bloc id="last_comment_date"><mx:text id="date" /></mx:bloc id="last_comment_date">
+				<mx:bloc id="last_commenter"><mx:text id="name" /></mx:bloc id="last_commenter">
+			</mx:bloc id="comments_datas">
+		<!-- Donnees relative aux notes -->
+			<mx:bloc id="ratings_datas">
+				<div><mx:text id="content" /></div>
+			</mx:bloc id="ratings_datas">
+      </div>
+<hr class="clear" />
+    </mx:bloc id="event">
+    
+    <mx:bloc id="no_result">
+      <h3><mx:text id="no_result" /></h3>
+    </mx:bloc id="no_result">
+    
+    <mx:bloc id="pager">
+      <mx:bloc id="first">&lt;&lt;</mx:bloc id="first">
+      <mx:bloc id="previous">&lt;</mx:bloc id="previous">
+      <mx:bloc id="last">&gt;&gt;</mx:bloc id="last">
+      <mx:bloc id="next">&gt;</mx:bloc id="next">
+      <mx:bloc id="separator">&nbsp;</mx:bloc id="separator">
+      <div class="pager"><mx:bloc id="items"><mx:text id="spacer" /><a mXattribut="href:href;hreflang:hreflang;title:title;class:class"><mx:text id="item" /></a></mx:bloc id="items"></div>
+    </mx:bloc id="pager">
+
+    <mx:bloc id="rss">
+			<h4>Syndication</h4>
+			<ul>
+				<li><mx:rssfeed title="Fil RSS version 2.0 des évènements" content="Fil RSS v2.0" type="rss2.0"/></li>
+			</ul>
+		</mx:bloc id="rss">
+  </div>
+</mx:bloc id="event_list">

@@ -1,0 +1,24 @@
+/* ------------------
+MOTEUR DE RECHERCHE
+---------------------*/
+.widgetSearch{
+}
+#search{
+}
+#searchForm{
+} 
+
+#header .widgetSearch .submit input {
+background: url(../images/images/images/searchButton.gif) no-repeat center center;
+    border: 1px solid black;
+    color: #666666;
+    cursor: pointer;
+    font-size: 12px;
+    height: 26px;
+    outline: medium none;
+    padding: 2px 5px 5px;
+    text-align: center;
+    vertical-align: bottom;
+    white-space: pre;
+    width: auto;
+}

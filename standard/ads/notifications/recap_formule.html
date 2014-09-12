@@ -1,0 +1,53 @@
+<mx:bloc id="formule">
+	<h2><mx:text id="title" /></h2>
+	<!-- Formule  sans payement-->
+	<mx:bloc id="formule_no_payment">
+		<ul>
+		<li><strong><mx:text id="label_libelle" /> : </strong><mx:text id="libelle" /></li>
+			<!-- Duree de publication -->
+		<li><strong><mx:text id="label_duree" /> : </strong><mx:text id="duree" /></li>
+		</ul>
+	</mx:bloc id="formule_no_payment">
+	
+	<!-- Formule avec payement-->
+	<mx:bloc id="formule_payment">
+		<table>
+			<thead>
+				<mx:bloc id="thead">
+					<th><mx:text id="libelle" /></th>
+					<th><mx:text id="duree" /></th>
+					<th><mx:text id="prix" /></th>
+				</mx:bloc id="thead">
+			</thead>
+			<tbody>
+				<mx:bloc id="info_formule">
+					<tr>
+						<td><mx:text id="libelle" /></td>
+						<td><mx:text id="duree" /></td>
+						<td>
+							<mx:text id="prixTtc" /> TTC<br />
+							<mx:text id="prixHt" /> HT<br />
+						</td>
+					</tr>
+				</mx:bloc id="info_formule">
+				<mx:bloc id="tva">
+					<tr>
+						<td colspan="2"><mx:text id="libelle" /></td>
+						<td><mx:text id="tva" /></td>
+					</tr>
+				</mx:bloc id="tva">
+				<mx:bloc id="prix_total">
+					<tr>
+						<td colspan="2"><mx:text id="libelle" /></td>
+						<td>
+              <p>Prix HT : <mx:text id="prixHt" /></p>
+              <p>Prix TTC : <mx:text id="prixTtc" /></p>
+							<p>TVA : <mx:text id="tauxTva" /> %</p>
+							<p>Montant TVA : <mx:text id="montantTva" /></p>
+						</td>
+					</tr>
+				</mx:bloc id="prix_total">
+			</tbody>
+		</table>
+	</mx:bloc id="formule_payment">
+</mx:bloc id="formule">

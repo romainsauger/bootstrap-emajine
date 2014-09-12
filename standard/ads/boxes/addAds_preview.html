@@ -1,0 +1,159 @@
+<!-- Bloc pour le recapitulatif des donnees saisie -->
+<div class="AdsPreview">
+	<mx:bloc id="preview">
+		<!-- Categorie -->
+		<fieldset class="AdsPreviewCategorie" >
+		<legend><mx:text id="legend" /></legend>
+			<mx:bloc id="category">
+				<p>
+					<span class="label" ><mx:text id="label" /> : </span><span class="libelle" ><mx:text id="libelle" /></span>
+					<mx:bloc id="edit">
+						<a mXattribut="href:href;hreflang:hreflang;title:title" class="AdsPreviewCategorieEdit" ><span><mx:text id="edit" /></span></a>
+					</mx:bloc id="edit">
+				</p>
+			</mx:bloc id="category">
+			
+			<!-- Type -->
+			<mx:bloc id="type">
+				<p>
+					<span class="label" ><mx:text id="label" /> : </span><span class="libelle" ><mx:text id="libelle" /></span>
+					<mx:bloc id="edit">
+						<a mXattribut="href:href;hreflang:hreflang;title:title" class="AdsPreviewCategorieType" ><span><mx:text id="edit" /></span></a>
+					</mx:bloc id="edit">
+				</p>
+			</mx:bloc id="type">
+		</fieldset>
+		
+		<!-- Contenu de l'annonce -->
+		<mx:bloc id="content">
+			<fieldset class="AdsPreviewContent">
+			<legend><mx:text id="legend" /></legend>
+			<div>
+				<mx:text id="ads" />
+			</div>
+			<mx:bloc id="edit">
+				<a mXattribut="href:href;hreflang:hreflang;title:title" class="AdsPreviewContentEdit"><span><mx:text id="edit" /></span></a>
+			</mx:bloc id="edit">
+			</fieldset>
+		</mx:bloc id="content">
+		
+		<!-- Formule  sans payement-->
+		<mx:bloc id="formule_no_payment">
+			<fieldset class="AdsPreviewFormuleNoPayment">
+			<legend><mx:text id="legend" /></legend>
+			<div>	
+				<ul>
+				<li><strong><mx:text id="label" /> : </strong><mx:text id="libelle" /></li>
+					<!-- Duree de publication -->
+					<mx:bloc id="duree">
+						<li><strong><mx:text id="label" /> : </strong><mx:text id="duree" /></li>
+					</mx:bloc id="duree">
+				</ul>
+				<mx:bloc id="edit">
+					<a mXattribut="href:href;hreflang:hreflang;title:title" class="AdsPreviewFormuleNoPaymentEdit" ><span><mx:text id="edit" /></span></a>
+				</mx:bloc id="edit">
+			</div>
+			</fieldset>
+		</mx:bloc id="formule_no_payment">
+			
+		<!-- Formule avec payement-->
+		<mx:bloc id="formule_payment">
+			<fieldset class="AdsPreviewFormuleWithPayment">
+			<legend><mx:text id="legend" /></legend>
+			<div>	
+				<table>
+					<thead>
+						<mx:bloc id="thead">
+							<th><mx:text id="libelle" /></th>
+							<th><mx:text id="duree" /></th>
+							<th><mx:text id="prix" /></th>
+						</mx:bloc id="thead">
+					</thead>
+					<tbody>
+						<mx:bloc id="info_formule">
+							<tr>
+								<td><mx:text id="libelle" /></td>
+								<td><mx:text id="duree" /></td>
+								<td><mx:text id="prix" /></td>
+							</tr>
+						</mx:bloc id="info_formule">
+						<mx:bloc id="tauxTva">
+							<tr>
+								<td colspan="2"><mx:text id="libelle" /></td>
+								<td><mx:text id="tauxTva" /> %</td>
+							</tr>
+						</mx:bloc id="tauxTva">
+						<mx:bloc id="tva">
+							<tr>
+								<td colspan="2"><mx:text id="libelle" /></td>
+								<td><mx:text id="tva" /></td>
+							</tr>
+						</mx:bloc id="tva">
+						<mx:bloc id="prixHt">
+							<tr>
+								<td colspan="2"><mx:text id="libelle" /></td>
+								<td><mx:text id="prixHt" /></td>
+							</tr>
+						</mx:bloc id="prixHt">
+						<mx:bloc id="prixTtc">
+							<tr>
+								<td colspan="2"><mx:text id="libelle" /></td>
+								<td><mx:text id="prixTtc" /></td>
+							</tr>
+						</mx:bloc id="prixTtc">
+					</tbody>
+				</table>
+				<mx:bloc id="edit">
+					<a mXattribut="href:href;hreflang:hreflang;title:title" class="AdsPreviewFormuleWithPaymentEdit" ><span><mx:text id="edit" /></span></a>
+				</mx:bloc id="edit">
+			</div>
+				
+			<mx:bloc id="payment_modules">
+				<div id="paymentModule">
+					<h3><mx:text id="title" /></h3>
+					<form method="post" mXattribut="action:action" id="choosePaymentModule">
+					<mx:bloc id="payment_modules_list">
+						<div class="row">
+							<input type="radio" name="paymentmodule" mXattribut="id:id;value:value;checked:checked" class="radio"/>
+							<label mXattribut="for:for">&nbsp;<mx:text id="label" /></label>
+						</div>
+					</mx:bloc id="payment_modules_list">
+					<div class="submit">
+						<input type="submit" name="submitChoosePaymentModule" mXattribut="value:value" /></a>
+					</div>
+					</form>
+				</div>
+			</mx:bloc id="payment_modules">
+				
+			<mx:bloc id="payment">
+				<div id="paymentInfos">
+					<mx:text id="payment_infos" />
+				</div>
+			</mx:bloc id="payment">
+				
+			<mx:bloc id="payment_method">
+				<div id="paymentActions">
+					<a name="paymentmethod"></a>
+					<h2><mx:text id="title" /></h2>
+					<mx:text id="payment_method" />
+					<a mXattribut="href:href;hreflang:hreflang;title:title" class="AdsPreviewFormuleWithPaymentMethods" ><span><mx:text id="change_payment_method" /></span></a><br />
+				</div>
+			</mx:bloc id="payment_method">
+				
+			<mx:bloc id="footer">
+				<div id="cart_footer">
+					<p><mx:text id="thanks" /></p>
+					<a mXattribut="href:hrefsite;hreflang:hreflangsite;title:titlesite"><mx:text id="site" /></a><br />
+				</div>
+			</mx:bloc id="footer">
+			</fieldset>
+		</mx:bloc id="formule_payment">
+			
+		<mx:bloc id="submit">
+			<div class="submit">
+				<a mXattribut="href:href;title:title;hreflang:hreflang"><mx:text id="value" /></a>
+			</div>
+		</mx:bloc id="submit">
+			
+	</mx:bloc id="preview">
+</div>

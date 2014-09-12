@@ -1,0 +1,41 @@
+<div mXattribut="id:id;class:class">
+	<div class="libelle">
+		<mx:text id="question"/>
+		<mx:bloc id="warning">
+			<div class="poll_warning"><mx:text id="warning"/></div>
+		</mx:bloc id="warning">
+	</div>
+	
+	
+	<mx:bloc id="select">
+		<span class="group_multi">
+			<select mXattribut="name:name;multiple:multiple;size:size;">
+				<mx:bloc id="options">
+					<option mXattribut="value:value;selected:selected;disabled:disabled"><mx:text id="option"/></option>
+				</mx:bloc id="options">
+			</select>
+		</span>
+	</mx:bloc id="select">
+	
+	<mx:bloc id="other">
+		<span class="group_multi">
+			<span class="multi_checkbox">
+				<input type="checkbox" mXattribut="name:name;id:id;value:value;checked:checked;disabled:disabled" class="checkbox"/>
+				<label mXattribut="for:for_id"><mx:text id="label"/></label>
+				<input type="text" mXattribut="name:inputname;value:inputvalue"/>
+			</span>
+		</span>
+	</mx:bloc id="other">
+	
+	<mx:bloc id="comments">
+		<div class="row">
+			<label><mx:text id="comments_label"/></label>
+			<textarea mXattribut="name:name;cols:cols;rows:rows"><mx:text id="comments"/></textarea>
+		</div>
+	</mx:bloc id="comments">
+	<mx:bloc id="notes">
+		<div class="notes">
+			<mx:text id="notes"/>
+		</div>
+	</mx:bloc id="notes">
+</div>

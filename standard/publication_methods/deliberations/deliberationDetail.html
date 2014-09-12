@@ -1,0 +1,25 @@
+<div id="deliberation">
+
+	<h1><mx:text id="label" /></h1>
+	
+	<mx:bloc id="date"><div class="deliberationDate"><mx:text id="date" /></div><mx:bloc id="date">
+	
+	<mx:bloc id="subjects"><div class="deliberationSubjects"><mx:text id="subjects" /></div></mx:bloc id="subjects">
+	
+	<mx:bloc id="participants">
+		<div class="deliberationParticipants" >
+			<ul>
+				<mx:bloc id="participant"><li><mx:text id="name" /></li></mx:bloc id="participant">
+			</ul>
+		</div>
+	</mx:bloc id="participants">
+	
+	<mx:bloc id="pdf">
+		<a mXattribut="href:href;hreflang:hreflang;title:title" class="deliberationPDF" ><span><mx:text id="label" /></span></a>
+	</mx:bloc id="pdf">
+	
+	<mx:bloc id="back">
+		<div class="linksmore"><a mXattribut="href:href;hreflang:hreflang;title:title" onclick="window.open(this.href);return false;" class="deliberationBack"><span><mx:text id="label" /></span></a></div>
+	</mx:bloc id="back">
+	
+</div>

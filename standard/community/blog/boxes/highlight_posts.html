@@ -1,0 +1,34 @@
+<div class="widget widgetHighlightPosts" mXattribut="class:box_class">
+	<mx:bloc id="widgetTitle"><h4><mx:text id="widgetTitle" /></h4></mx:bloc id="widgetTitle">
+	
+	<div class="widgetContainer">
+		<mx:bloc id="highlighted_post">
+			<div class="widgetHighlightPost" >
+				<div class="widgetHighlightPostContainer" >
+					<h3><mx:text id="libelle" /></h3>
+					<div class="widgetTagCloudDate" ><span><mx:text id="date_crea" /></span></div>
+					<mx:bloc id="author"><div class="widgetTagCloudAuthor" ><span><mx:text id="author" /></span></div></mx:bloc id="author">
+					<mx:bloc id="description"><div class="widgetTagCloudDescription" ><span><mx:text id="description" /></span></div></mx:bloc id="description">
+					<mx:bloc id="nb_char_max_description">100</mx:bloc id="nb_char_max_description"><!-- Nombre max de caracteres pour la description -->
+					<mx:bloc id="extension_description">...</mx:bloc id="extension_description"><!-- Extension utilisee lorsque la description est tronquee -->
+					<mx:bloc id="thumbnail"><div class="widgetTagCloudThumbnail" ><mx:text id="thumbnail" /></div></mx:bloc id="thumbnail">
+					<div class="linksmore"><a mXattribut="href:href;hreflang:hreflang;title:title;" class="widgetTagCloudLink" ><span><mx:text id="label" /></span></a></div>
+			
+					<!-- Donnees relatives aux commentaires -->
+					<mx:bloc id="comments_datas">
+						<mx:bloc id="link"><a mXattribut="href:href;hreflang:hreflang;title:title" class="BlogCommentsLink" ><span><mx:text id="label" /></span></a></mx:bloc id="link">
+						<mx:bloc id="last_comment_date"><div class="BlogCommentsDate" ><span><mx:text id="date" /></span></div></mx:bloc id="last_comment_date">
+						<mx:bloc id="last_commenter"><div class="BlogCommentsCommenter" ><span><mx:text id="name" /></span></div></mx:bloc id="last_commenter">
+					</mx:bloc id="comments_datas">
+			
+					<!-- Donnees relatives aux notes -->
+					<mx:bloc id="ratings_datas">
+						<div class="BlogRating" ><mx:text id="content" /></div>
+					</mx:bloc id="ratings_datas">
+				</div>
+			</div>
+		</mx:bloc id="highlighted_post">
+	</div>	
+	
+	<div class="widgetFooter"></div>
+</div>

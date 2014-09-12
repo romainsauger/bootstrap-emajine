@@ -1,0 +1,250 @@
+/* -------------------------
+GABARITS DE MISES EN PAGE
+-------------------------*/
+/*3 colonnes : Col gauche | contenu | Col droite*/
+.layoutLeftContentRight #leftbar {
+	margin:25px 0 0 -965px;
+	width:190px;
+}
+.layoutLeftContentRight #contents {
+	padding:25px 235px 10px 235px;
+}
+.layoutLeftContentRight #contentsInner {
+	width: 475px;
+}
+.layoutLeftContentRight .product_detail #ProductRightCol {
+    width: 160px;
+}
+/*2 colonnes : contenu | Col droite*/
+.layoutContentRight #contents {
+	padding:25px 235px 10px 25px;
+}
+/*2 colonnes : col gauche | contenu*/
+.layoutLeftContent #contents {
+	padding:0 10px 10px 226px;
+}
+/*1 colonne : contenu*/
+.layoutContent #contents {
+	padding:15px;
+}
+.layoutLeftContentRight .cart table{
+	overflow: auto;
+	width: 475px;
+	display: block;
+}
+
+/* ------
+ACCUEIL
+---------*/
+.homeRow1 { 
+overflow:auto;
+margin-bottom:15px;
+}
+.homeRow1 .homeBloc{ 
+float: left;
+}
+.homeRow1 h2 {
+font-size: 1.2em;
+margin: 0 5px;
+padding: 8px 10px;
+text-decoration: none;
+font-weight: bold;
+}
+.homeRow2 h2{ 
+margin: 0;
+font-size: 1.2em;
+text-decoration: none;
+font-weight: bold;
+padding: 8px 10px;
+}
+
+/* ------------
+HEADER (EN-TETE)
+--------------*/
+#header{
+}
+	#header h1{
+		font-size:1em;
+		margin:0;
+	}
+	#header h1 a{
+		border:0;
+		color:#ffffff;
+		font-size:1.8em;
+		font-weight:bold;
+		left:110px;
+		position:absolute;
+		top:65px;
+	}
+	#header #logo{
+	}
+		#header #logo a{
+			display:block;
+			height:100px;
+			width:376px;
+			/** Image du logo */
+			background:url(../images/images/logo.png) no-repeat center;
+			 padding: 53px 0 15px 0;
+		}
+			#header #logo a span{
+				display:none;
+			}
+#headerInner {
+	width:980px;
+	margin:0 auto;
+	position: relative;
+}
+
+/* ----------------------
+ZONE INTERIEURE (CONTENU)
+-----------------------*/
+#wrapper{
+	color:#878787;
+	font-size:1em;
+	margin:0 auto;
+	width:980px;
+	background:#ffffff;
+	border: 20px solid #242529;
+	padding: 5px;
+}
+
+#wrapperInner{
+	width:980px;
+	margin:0 auto;
+	padding: 50px 0 0 0;
+}
+#container{
+	float:left;
+	width:980px;
+}
+#contents {
+	padding:25px 235px 25px 25px;
+}
+#contentsInner {
+	padding:5px;
+	background:#ffffff;
+	width:749px;
+}
+
+/* ------------
+COLONNES
+--------------*/
+#leftbar {
+	float:left;
+	margin:0 0 0 -980px;
+	width:200px;
+	overflow: hidden;
+}
+#rightbar{
+	float:left;
+	margin:0 0 0 -215px;
+	width:190px;
+}
+
+/* -------------------
+FOOTER (PIED DE PAGE)
+--------------------*/
+#footer{
+	font-size:1.2em;
+}
+#footerInner{
+ 	margin:0 auto;
+ 	width:980px;
+ 	min-height:50px;
+}
+#signature{
+	text-align:center;
+}
+  #signature p,#signature a,#signature a:visited{
+		background:none;
+		color:#666666;
+		text-decoration:none;
+  }
+  #signature a:hover{
+		color:#ffffff;
+  }
+ 
+/* ------------
+PAGE ERREUR
+--------------*/ 
+#error_page {
+}
+.error{
+	color:#ff0000;
+}
+
+/* -----------------------
+DECLARATION DES COULEURS
+POUR LA PERSONNALISATION DU THEME
+A L'AIDE DU PARSEUR.
+PEUT ETRE SUPPRIMÉ.
+------------------------*/
+#colorsDefinition {
+/** couleur 1 */
+color:#007AAA;
+/** couleur 2 */
+color:#666666;
+/** couleur 3 */
+color:#cccccc;
+/** couleur 4 */
+color:#eeeeee;
+}
+
+/* -------------------------
+CONTEXTUALISATION IZI-MEDIA
+-------------------------*/
+body.izimedia {
+	background:black url(/common_images/skins/DefaultSkins1.5/izi-bg-container.jpg) no-repeat top center;
+}
+body.izimedia a:link{
+	color:#f29d2a;
+}
+body.izimedia h6 {
+	color: #f29d2a;
+}
+body.izimedia a:visited{
+	color:#bb630a;
+}
+body.izimedia pre{
+	background:#f0f6f7;
+	border:1px solid #f29d2a;
+}
+body.izimedia acronym {
+	border-bottom:1px dashed #f29d2a;
+}
+body.izimedia q{
+	color:#f29d2a;
+}
+body.izimedia code{
+	background:#f29d2a;
+}
+body.izimedia body.izimedia #nested .firstLevel li a:hover{
+	color: #f29d2a;
+}
+body.izimedia #nested li.active a{
+	border-top:1px solid #f29d2a;
+	border-left:1px solid #f29d2a;
+	border-right:1px solid #f29d2a;
+	background:url(/common_images/skins/DefaultSkins1.5/izi-bg-menu-active.png) repeat-x;
+}
+body.izimedia #leftbar #nested .firstLevel li a:hover{
+	color:#f29d2a;
+}
+body.izimedia #wrapper #notNested li a:hover {
+	color: #f29d2a;
+}
+body.izimedia #nested .firstLevel li.sfhover ul{
+	background: #bb630a;
+}
+body.izimedia #header #logo a {
+	background: url(/common_images/skins/DefaultSkins1.5/izi-logo.jpg) no-repeat 50% 0%;
+}
+body.izimedia #nested .firstLevel li a:hover{
+		color:#f29d2a ;
+}
+body.izimedia submit input{
+	background:#f29d2a;
+}
+body.izimedia ul li {
+	background: url(/common_images/skins/DefaultSkins1.5/list-izi.gif) no-repeat 0 4px;
+}

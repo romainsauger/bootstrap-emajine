@@ -1,0 +1,15 @@
+<!-- Bloc qui contient le message qui sera envoyé aux moderateurs concernés lors de l'ajout d'une nouvelle annonce-->
+<mx:bloc id="objet">Une annonce a été modifée sur {SITENAME}</mx:bloc id="objet">
+
+<h2>Une nouvelle annonce en attente de moderation sur <mx:text id="site" /></h2>
+
+<p>
+	Une annonce vient d'&ecirc;tre modifi&eacute;e par <mx:text id="user_name" />.
+	
+	<ul>
+		<li>Identifiant de l'annonce : <mx:text id="id_annonce" /></li>
+	</ul>
+	
+	Pour mod&eacute;rer cette annonce, rendez vous sur l'espace d'administration du site concern&eacute; ou cliquez sur le lien suivant :
+	<a mXattribut="href:moderationUrl"><mx:text id="moderationUrl" /></a>.
+</p>

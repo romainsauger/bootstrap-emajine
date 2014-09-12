@@ -1,0 +1,119 @@
+<div id="accountOrderDetail">
+    <h2><mx:text id="title" /></h2><mx:text id="header_merchant_infos" /><mx:text id="date_label" /> : <mx:text id="date" />
+    <br/>
+    <mx:text id="order_reference_label" /> : <mx:text id="order_reference" />
+    <br/>
+    <mx:bloc id="customer">
+    
+        <h3><mx:text id="customer_title" /></h3>
+        <mx:bloc id="mail">
+            <mx:text id="mail_label" />: <mx:text id="mail" />
+            <br/>
+        </mx:bloc id="mail">
+        
+        <mx:bloc id="tel">
+            <mx:text id="tel_label" />: <mx:text id="tel" />
+            <br/>
+        </mx:bloc id="tel">
+        
+        <mx:bloc id="mobile">
+            <mx:text id="mobile_label" />: <mx:text id="mobile" />
+            <br/>
+        </mx:bloc id="mobile">
+        
+        <mx:bloc id="fax">
+            <mx:text id="fax_label" />: <mx:text id="fax" />
+            <br/>
+        </mx:bloc id="fax">
+        
+    </mx:bloc id="customer">
+    
+    <mx:bloc id="delivery">
+        <h3><mx:text id="delivery_title" /></h3>
+        <address>
+            <mx:text id="address" />
+        </address>
+    </mx:bloc id="delivery">
+    
+	<mx:bloc id="payment">
+		<h3><mx:text id="title" /></h3>
+		<p><mx:text id="paymentLabel" /></p>
+		<mx:bloc id="paymentDetail">
+			<mx:text id="paymentDetail" />
+		</mx:bloc id="paymentDetail">
+	</mx:bloc id="payment">
+	
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <mx:text id="name_label" />
+                </th>
+                <th>
+                    <mx:text id="reference_label" />
+                </th>
+                <mx:bloc id="alternatives_label">
+                    <th>
+                        <mx:text id="alternatives_label" />
+                    </th>
+                </mx:bloc id="alternatives_label">
+                <th>
+                    <mx:text id="quantity_label" />
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <mx:bloc id="products">
+                <tr>
+                    <td>
+                        <mx:text id="name" />
+                        <br/>
+                        <mx:bloc id="options">
+                            <strong><mx:text id="option_label" /></strong>: <mx:text id="value" />
+                        </mx:bloc id="options">
+                        <mx:bloc id="customised_text">
+                            <br/>
+                            <strong><mx:text id="customised_text_label" />: </strong>
+                            <br/>
+                            <mx:text id="customised_text_message" />
+                        </mx:bloc id="customised_text">
+                        
+          					<!-- Affichage des fichiers uploadés -->
+								<mx:bloc id="attachedFiles">
+			    					<br/>
+			    					<mx:bloc id="file">
+									<div class="file">
+				    					<a mXattribut="href:href;hreflang:hreflang;title:title"><mx:text id="file" /></a>
+									</div>
+			    					</mx:bloc id="file">
+			    					<br/>
+								</mx:bloc id="attachedFiles">
+			
+                        <mx:bloc id="reservation">
+                            <br/>
+                            <mx:text id="detail" />
+                            <br/>
+                            <mx:text id="season" />
+                        </mx:bloc id="reservation">
+                    </td>
+                    <td>
+                        <mx:text id="ref" />
+                    </td>
+                    <mx:bloc id="alternatives">
+                        <td>
+                            <mx:bloc id="alternative_1">
+                                <mx:text id="value" />
+                            </mx:bloc id="alternative_1">
+                            <mx:bloc id="alternative_2">
+                                <mx:text id="value" />
+                            </mx:bloc id="alternative_2">
+                        </td>
+                    </mx:bloc id="alternatives">
+                    <td>
+                        <mx:text id="quantity" />
+                    </td>
+                </tr>
+            </mx:bloc id="products">
+        </tbody>
+    </table><mx:text id="footer_merchant_infos" />
+</div>

@@ -1,0 +1,57 @@
+<div class="advanced_form_ads_search">
+	<form class="ads_search_form" method="post" mXattribut="action:action">
+		<fieldset>
+			<div class="row adsSearchForm">
+				<label mXattribut="for:input_for_id"><mx:text id="input_label"/></label>
+				<input type="text" mXattribut="name:input_name;id:input_id;value:input_value" class="wordsbox"/>
+			</div>
+		</fieldset>
+		
+		<mx:bloc id="supplementary_fields">
+			<fieldset class="supplementaryFields" >
+				<legend><mx:text id="supplementary_fields_label"/></legend>
+				<mx:bloc id="supplementary_field">
+					<div class="row">
+						<mx:text id="supp_form_element" />
+					</div>
+				</mx:bloc id="supplementary_field">
+			</fieldset>
+		</mx:bloc id="supplementary_fields">
+		
+		<mx:bloc id="filter_period">
+			<fieldset>
+				<legend><mx:text id="filter_period_label"/></legend>
+					<div class="row filterPeriod">
+						<label for="filter_period_id"><mx:text id="input_label"/></label>
+						<input type="text" name="filter_period" id="filter_period_id" mXattribut="value:input_value" class="text" size="5" />
+						<select name="type_period">
+							<option value="days" mXattribut="selected:selecteddays"><mx:text id="days_label" /></option>
+							<option value="weeks" mXattribut="selected:selectedweeks"><mx:text id="weeks_label" /></option>
+							<option value="months" mXattribut="selected:selectedmonths"><mx:text id="months_label" /></option>
+						</select>
+					</div>
+			</fieldset>
+		</mx:bloc id="filter_period">
+		
+		<mx:bloc id="categories">
+			<fieldset>
+				<legend><mx:text id="legend" /></legend>
+				<div class="row">
+					<label mXattribut="for:for_id"><mx:text id="label"/></label>
+					<mx:text id="select_categories" />
+				</div>
+			</fieldset>
+		</mx:bloc id="categories">
+			
+		<div class="submit">
+			<input type="submit" name="button" mXattribut="value:submit_value" />
+		</div>
+	</form>
+	<mx:bloc id="last_search">
+		<a mXattribut="href:href;hreflang:hreflang:title:title" class="widgetSearchAdsLastSearch" ><span><mx:text id="label"/></span></a>
+	</mx:bloc id="last_search">
+	<br/>
+	<mx:bloc id="advanced_search">
+		<a mXattribut="href:href;hreflang:hreflang:title:title" class="widgetSearchAdsAdvancedSearch" ><span><mx:text id="label"/></span></a>
+	</mx:bloc id="advanced_search">
+</div>

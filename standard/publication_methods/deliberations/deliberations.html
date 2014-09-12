@@ -1,0 +1,52 @@
+<div id="deliberations">
+
+	<mx:bloc id="search">
+		<div class="search_deliberation">
+			<form id="formYearSelect" method="post" mXattribut="action:action">
+				<fieldset>
+					<legend><mx:text id="legend"/></legend>
+					<div class="row">
+						<label for="yearselect"><mx:text id="label"/>&nbsp;:&nbsp;</label>
+						<select name="yearselect" id="yearselect" onchange="document.getElementById('formYearSelect').submit();">
+							<mx:bloc id="options"><mx:text id="option" /></mx:bloc id="options">
+						</select>
+					</div>
+				</fieldset>
+				<noscript>
+					<div class="submit">
+						<input type="submit" name="valid" mXattribut="value:value" />
+					</div>
+				</noscript>
+			</form>
+		</div>
+	</mx:bloc id="search">
+
+	
+
+	<mx:bloc id="deliberations">
+		<mx:bloc id="month"><h1><mx:text id="month" /></h1></mx:bloc id="month">
+		<div class="deliberation">
+			<h1><mx:text id="title" /></h1>
+			<mx:bloc id="subjects"><div class="deliberationSubject"><mx:text id="subjects" /></div><mx:bloc id="subjects">
+			<mx:bloc id="date"><div class="deliberationDate"><mx:text id="date" /></div><mx:bloc id="date">
+			<mx:bloc id="pdf">
+				<a mXattribut="href:href;hreflang:hreflang;title:title" class="deliberationPDF" ><span><mx:text id="label" /></span></a>
+			</mx:bloc id="pdf">
+			<div class="linksmore"><a mXattribut="href:href;hreflang:hreflang;title:title"><span><mx:text id="label" /></span></a></div>
+		</div>
+	</mx:bloc id="deliberations">
+
+	<mx:bloc id="pager">
+		<mx:bloc id="first">&lt;&lt;</mx:bloc id="first">
+		<mx:bloc id="previous">&lt;</mx:bloc id="previous">
+		<mx:bloc id="last">&gt;&gt;</mx:bloc id="last">
+		<mx:bloc id="next">&gt;</mx:bloc id="next">
+		<mx:bloc id="separator">&nbsp;</mx:bloc id="separator">
+		<div class="pager"><mx:bloc id="items"><mx:text id="spacer" /><a mXattribut="href:href;hreflang:hreflang;title:title"><mx:text id="item" /></a></mx:bloc id="items"></div>
+	</mx:bloc id="pager">
+
+	<mx:bloc id="no_datas">
+		<div class="noDatas" >Aucune délibération n'est disponible.</p>
+	</mx:bloc id="no_datas">
+
+</div>

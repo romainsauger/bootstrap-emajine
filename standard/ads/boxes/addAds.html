@@ -1,0 +1,139 @@
+<div class="widget widgetAddAdds" mXattribut="class:box_class" id="addAds" >
+	<mx:bloc id="widgetTitle"><h4><mx:text id="widgetTitle" /></h4></mx:bloc id="widgetTitle">
+	
+	<div class="widgetContainer">
+		<!-- Bloc pour le choix de la categorie -->
+		<mx:bloc id="chooseCategory">
+			<div id="addAdsChooseCategory">	
+				<div id="steps">
+					<span class="active">Choix de la cat&eacute;gorie</span>
+					<span>Choix du type</span>
+					<span>Cr&eacute;ation de l'annonce</span>
+					<span>Choix de la formule</span>
+					<span>Validation</span>
+				</div>
+				<h3><mx:text id="question" /></h3>
+				<p id="addAdsinformations"><mx:text id="informations" /></p>
+				<div>
+					<mx:text id="form" />
+				</div>
+			</div>
+		</mx:bloc id="chooseCategory">
+	
+		<!-- Bloc pour le choix du type d'annonce -->
+		<mx:bloc id="chooseType">
+			<div id="addAdsChooseCategory">
+				<div id="steps">
+					<span>Choix de la cat&eacute;gorie</span>
+					<span class="active">Choix du type</span>
+					<span>Cr&eacute;ation de l'annonce</span>
+					<span>Choix de la formule</span>
+					<span>Validation</span>
+				</div>
+				<mx:bloc id="bk"><a mXattribut="href:href;hreflang:hreflang;title:title" class="addAdsChooseCategoryBack" ><span><mx:text id="back" /></span></a></mx:bloc id="bk">
+				<!-- Permet l'affichage d'un message dans le cas où aucun type d'annonce n'a été trouvé	-->
+				<mx:bloc id="noTypeFound">
+					<p><mx:text id="msg" /></p>
+				</mx:bloc id="noTypeFound">
+				<mx:bloc id="type">
+					<div>
+						<h3><mx:text id="libelle" /></h3>
+						<p><mx:text id="description" /></p>
+						<a mXattribut="href:href;hreflang:hreflang;title:title" class="addAdsChooseCategoryChoose"><span><mx:text id="choose" /></span></a>
+					</div>
+				</mx:bloc id="type">
+			</div>
+		</mx:bloc id="chooseType">
+	
+		<!-- Bloc pour le formulaire de l'annonce -->
+		<mx:bloc id="form">
+			<div class="addAdsCreate">
+				<div id="steps">
+					<span>Choix de la cat&eacute;gorie</span>
+					<span>Choix du type</span>
+					<span class="active">Cr&eacute;ation de l'annonce</span>
+					<span>Choix de la formule</span>
+					<span>Validation</span>
+				</div>
+				<mx:bloc id="bk"><a mXattribut="href:href;hreflang:hreflang;title:title" class="addAdsCreateBack" ><span><mx:text id="back" /></span></a></mx:bloc id="bk">
+				<div>
+					<mx:text id="form" />
+				</div>
+			</div>
+		</mx:bloc id="form">
+	
+		<!-- Bloc pour le recapitulatif des donnees saisie -->
+		<mx:bloc id="chooseFormule">	
+			<div id="addAdsChooseFormule">
+				<div id="steps">
+					<span>Choix de la cat&eacute;gorie</span>
+					<span>Choix du type</span>
+					<span>Cr&eacute;ation de l'annonce</span>
+					<span class="active">Choix de la formule</span>
+					<span>Validation</span>
+				</div>
+				<mx:bloc id="bk"><a mXattribut="href:href;hreflang:hreflang;title:title" class="addAdsChooseFormuleBack" ><span><mx:text id="back" /></span></a></mx:bloc id="bk">
+				<mx:bloc id="noFormuleFound">
+					<p><mx:text id="msg" /></p>
+					<a mXattribut="href:href;hreflang:hreflang;title:title" class="addAdsChooseFormuleBack" ><span><mx:text id="back" /></span></a>
+				</mx:bloc id="noFormuleFound">
+				<mx:bloc id="formule">
+					<div>
+						<!-- Libelle de la formule -->
+						<h3><mx:text id="libelle" /></h3>
+						<!--<mx:bloc id="display_type">thumbnail</mx:bloc id="display_type"> Type d'affichage de l'image : thumbnail / fullsize-->
+					
+						<!-- Image -->
+						<mx:bloc id="img">
+							<div class="addAdsChooseFormuleImg" ><mx:text id="image" /></div>
+						</mx:bloc id="img">
+					
+						<!-- Description -->
+						<mx:bloc id="description">
+							<div class="addAdsChooseFormuleDescription" ><mx:text id="description" /></div>
+						</mx:bloc id="description">
+					
+						<!-- Duree -->
+						<mx:bloc id="duree">
+							<div class="addAdsChooseFormuleDuree" ><mx:text id="duree" /></div>
+						</mx:bloc id="duree">
+					
+						<!-- Prix -->
+						<mx:bloc id="prix">
+							<div class="addAdsChooseFormulePrix" >
+								<p class="addAdsChooseFormulePrixAds"><mx:text id="prix" /></p>
+								<p class="addAdsChooseFormulePrixHt">Prix HT : <mx:text id="prixHt" /></p>
+								<p class="addAdsChooseFormulePrixTtc">Prix TTC : <mx:text id="prixTtc" /></p>
+								<p class="addAdsChooseFormulePrixMontantTva">Montant de la TVA : <mx:text id="montantTva" /></p>
+								<p class="addAdsChooseFormulePrixTauxTva">Taux de TVA : <mx:text id="tauxTva" /> %</p>
+							</div>
+						</mx:bloc id="prix">
+						<a mXattribut="href:href;hreflang:hreflang;title:title" class="addAdsChooseFormuleChooseLink" ><span><mx:text id="choose" /></span></a>
+					</div>
+				</mx:bloc id="formule">
+			</div>
+		</mx:bloc id="chooseFormule">
+	
+		<!-- Bloc pour le recapitulatif des donnees saisie -->
+		<mx:bloc id="preview">
+			<div id="steps">
+				<span>Choix de la cat&eacute;gorie</span>
+				<span>Choix du type</span>
+				<span>Cr&eacute;ation de l'annonce</span>
+				<span>Choix de la formule</span>
+				<span class="active">Validation</span>
+			</div>
+			<mx:text id="preview" /><!-- Template addAds_preview.html -->
+		</mx:bloc id="preview">
+	
+		<!-- Bloc pour l'affichage du message de confirmation d'enregistrement de l'annonce -->
+		<mx:bloc id="saveAds">
+			<div>
+				L'annonce a bien &eacute;t&eacute; enregistr&eacute;e.
+				<mx:text id="content" />
+			</div>
+		</mx:bloc id="saveAds">
+	</div>
+	
+	<div class="widgetFooter"></div>
+</div>

@@ -1,0 +1,28 @@
+<h1><mx:text id="title" /></h1>
+
+<!-- Bloc pour le formulaire de modification de l'annonce -->
+<mx:bloc id="form">
+	<div>
+		<mx:text id="form" />
+	</div>
+</mx:bloc id="form">
+
+<!-- Bloc pour l'affichage du message de confirmation d'enregistrement -->
+<mx:bloc id="msg_save">
+	<div class="msgSave">
+		<p>Votre annonce a bien été modifiée.</p>
+		<mx:bloc id="msg_moderation">
+			<p>Vous devez maintenant soumettre votre annonce à modération. Attention, vous ne pourrez pas modifier votre annonce tant qu'elle sera "en attente de modération".</p>
+			<a mXattribut="href:href;hreflang:hreflang;title:title" class="msgModerationAsk"><span><mx:text id="label" /></span></a>
+		</mx:bloc id="msg_moderation">
+		<mx:bloc id="bk"><a mXattribut="href:href;hreflang:hreflang;title:title" class="msgModerationBk"><span><mx:text id="label" /></span></a></mx:bloc id="bk">
+	</div>
+</mx:bloc id="msg_save">
+
+<!-- Affichage d'un msg d'erreur si aucune modification n'est possible	 -->
+<mx:bloc id="error">
+	<div class="error">
+		<p><mx:text id="error_msg" /></p>
+		<mx:bloc id="bk"><a mXattribut="href:href;hreflang:hreflang;title:title" class="errorBk" ><span><mx:text id="label" /></span></a></mx:bloc id="bk">
+	</div>
+</mx:bloc id="error">

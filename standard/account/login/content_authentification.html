@@ -1,0 +1,57 @@
+<script>
+    $(function(){
+      $('#contentLoginForm legend').after($('.loginError').addClass('bg-danger'));
+    });
+</script>
+
+<div id="accountAuthentification" class="content">
+	<h1><mx:text id="title" /></h1>
+	
+	<mx:bloc id="information_message">
+		<div id="information_message">
+			<mx:text id="message" />
+		</div>
+	</mx:bloc id="information_message">
+	
+	<div class="bt_row">
+
+
+
+
+	<div id="accountAuthentificationForm" class="col-md-5">
+		<form id="contentLoginForm" method="post" mXattribut="action:action">
+			<fieldset>
+				<legend><mx:text id="login_legend" /></legend>
+				<mx:bloc id="authentificationError">
+					<div class="error">
+						<mx:text id="errorMessage" />
+					</div>
+				</mx:bloc id="authentificationError">
+				<div class="username form-group">
+						<label for="username" class="control-label"><mx:text id="username" /></label>
+					<span class="fields">
+						<input type="text" name="username" id="username" class="form-control" />
+					</span>
+				</div>
+				<div class="password form-group">
+
+						<label for="password" class="control-label"><mx:text id="password" /></label>
+					<span class="fields">
+						<input type="password" name="password" id="password" class="form-control"  />
+					</span>
+				</div>
+				<div class="submit">
+					<input type="submit" mXattribut="value:submit_value" class="btn btn-default"/>
+				</div>
+				<input type="hidden" name="manageaccount" value="1" />
+			</fieldset>
+		</form>
+		<a mXattribut="href:hrefpassword;hreflang:hreflangpassword;title:titlepassword" class="lostPassword" ><span><mx:text id="lost_password" /></span></a>
+	</div>
+	
+	<div id="account_authentification_subscription" class="col-md-5 col-md-push-1">
+		<mx:text id="subscriptioncomment" />
+		<a mXattribut="href:hrefsubscribe;hreflang:hreflangsubscribe;title:titlesubscribe" class="accountAuthentificationSubscription btn btn-default" ><span><mx:text id="subscribe" /></span></a>
+	</div>
+		</div>
+</div>

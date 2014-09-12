@@ -1,0 +1,20 @@
+<!-- Bloc qui contient le message qui sera envoyé au postmaster du site pour le prevenir qu'une annonce a été ajoutée -->
+<mx:bloc id="objet">Une nouvelle annonce sur {SITENAME}</mx:bloc id="objet">
+
+<h2>Une nouvelle annonce sur <mx:text id="site" /></h2>
+
+<p>
+	Une nouvelle annonce vient d'&ecirc;tre cr&eacute;&eacute;e par <mx:text id="user_name" />.
+	
+	<ul>
+		<li>Identifiant de l'annonce : <mx:text id="id_annonce" /></li>
+	</ul>
+</p>
+
+<mx:bloc id="info_paiement">
+	<mx:text id="content" />
+</mx:bloc id="info_paiement">
+
+<mx:bloc id="info_formule">
+	<mx:text id="content" />
+</mx:bloc id="info_formule">

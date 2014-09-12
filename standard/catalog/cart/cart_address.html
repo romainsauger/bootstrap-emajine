@@ -1,0 +1,66 @@
+<div id="cartAddress" class="cart">
+	<h2><mx:text id="title" /></h2>
+	
+	<div id="steps">
+		<span>Panier</span>
+		<span>Identification</span>
+		<span class="active">Adresses</span>
+		<span>Paiement</span>
+		<span>Confirmation</span>
+	</div>
+	<div class="bt_row">
+	<mx:bloc id="global">
+		<div id="currentAddress">
+			<mx:bloc id="invoicing">
+				<div class="address invoicingAddress col-md-5">
+					<h3><mx:text id="invoicing_title" /></h3>
+					<address><mx:text id="current_address" /></address>
+					<a mXattribut="href:href;hreflang:hreflang;title:title" class="btn btn-default"><mx:text id="other" /></a>
+				</div>
+			</mx:bloc id="invoicing">
+			
+			<mx:bloc id="delivery">
+				<div class="address deliveryAddress col-md-5 col-md-push-1">
+					<h3><mx:text id="delivery_title" /></h3>
+					<mx:bloc id="mode"><div class="deliveryMode"><mx:text id="mode" /></div></mx:bloc id="mode">
+					<address><mx:text id="current_address" /></address>
+					<a mXattribut="href:href;hreflang:hreflang;title:title" class="btn btn-default"><mx:text id="other" /></a>
+				</div>
+			</mx:bloc id="delivery">	
+		
+			<form id="adresseselectionvalidationform" mXattribut="action:action" method="post">
+					<div class="submit">
+						<input type="submit" name="adresseselectionvalidation" mXattribut="value:value" class="btn btn-primary  btn-lg"/>
+					</div>
+			</form>
+		</div>
+	</mx:bloc id="global">
+	
+	<mx:bloc id="address_selection">
+		<div id="manage_address">
+			<mx:bloc id="address_list">
+				<h3><mx:text id="list_title" /></h3>
+				<form id="adresseselectionform" mXattribut="action:action" method="post">
+					<fieldset>
+							<legend><mx:text id="legend" /></legend>
+							<mx:bloc id="address">
+								<div class="row adresses">
+									<label mXattribut="for:forradio"> <mx:text id="address_label" /></label>
+									<input type="radio" name="adresse" mXattribut="id:idradio;value:valueradio" class="radio"/>
+									<address><mx:text id="detail" /></address>
+								</div>
+							</mx:bloc id="address">
+					</fieldset>
+					<div class="submit">
+						<input type="submit" name="adresseselectionvalidation" mXattribut="value:valueselectadresse" />
+					</div>
+					<input type="hidden" name="type" mXattribut="value:valuetype" />
+				</form>
+			</mx:bloc id="address_list">
+			
+			<h3><mx:text id="new_address_title" /></h3>
+			<mx:text id="new_address_form" />
+		</div>
+	</mx:bloc id="address_selection">
+</div>
+  </div>

@@ -1,0 +1,169 @@
+<div mxAttribut="class:class">
+<!-- 	la classe par défaut sera "postform" suivie d'un deuxieme classe : "editpost", "newpost", "newtopic", etc -->
+	
+	<mx:bloc id="preview">
+		<div class="boardPostPreview">
+			<h5><mx:text id="title"/></h5>
+			<div class="boardPostPreviewContent">
+				<mx:text id="preview"/>
+			</div>
+		</div>
+	</mx:bloc id="preview">
+	
+	<form mxAttribut="action:action;method:method" id="post_form" >
+		<fieldset>
+			<legend><mx:text id="new_post"/></legend>
+			
+			<mx:bloc id="name">
+				<div class="row name">
+					<mx:bloc id="name_error">
+						<div class="errorForm"><mx:text id="error"/></div>
+					</mx:bloc id="name_error">
+					<label for="post_name"><mx:text id="name_label"/></label>
+					<input id="post_name" type="text" name="name" mxAttribut="value:name_value"/>
+				</div>
+			</mx:bloc id="name">
+			
+			<mx:bloc id="email">
+				<div class="row email">
+					<mx:bloc id="email_error">
+						<div class="errorForm"><mx:text id="error"/></div>
+					</mx:bloc id="email_error">
+					<label for="post_email"><mx:text id="email_label"/></label>
+					<input id="post_email" type="text" name="email" mxAttribut="value:email_value"/>
+				</div>
+			</mx:bloc id="email">
+			
+			<mx:bloc id="subject">
+				<div class="row subject">
+					<mx:bloc id="subject_error">
+						<div class="errorForm"><mx:text id="error"/></div>
+					</mx:bloc id="subject_error">
+					<label for="post_subject"><mx:text id="subject_label"/></label>
+					<input id="post_subject" type="text" name="subject" mxAttribut="value:subject_value"/>
+				</div>
+			</mx:bloc id="subject">
+			
+			<div class="row">
+				<mx:bloc id="message_error">
+					<div class="errorForm"><mx:text id="error"/></div>
+				</mx:bloc id="message_error">
+				<label for="post_message" class="style"><mx:text id="message_label"/></label>
+				
+				<mx:bloc id="bbcode">
+					<div class="style">
+						<input type="button" class="button" accesskey="b" name="addbbcode0" value=" B " style="font-weight:bold;" onclick="bbstyle(0)"/>
+						<input type="button" class="button" accesskey="i" name="addbbcode2" value=" i " style="font-style:italic;" onclick="bbstyle(2)"/>
+						<input type="button" class="button" accesskey="u" name="addbbcode4" value=" u " style="text-decoration: underline;" onclick="bbstyle(4)"/>
+						<input type="button" class="button" accesskey="q" name="addbbcode6" value="Quote" onclick="bbstyle(6)"/>
+						<input type="button" class="button" accesskey="c" name="addbbcode8" value="Code" onclick="bbstyle(8)"/>
+						<input type="button" class="button" accesskey="l" name="addbbcode10" value="List" onclick="bbstyle(10)"/>
+						<input type="button" class="button" accesskey="o" name="addbbcode12" value="List=" onclick="bbstyle(12)"/>
+						<input type="button" class="button" accesskey="p" name="addbbcode14" value="Img" onclick="bbstyle(14)"/>
+						<input type="button" class="button" accesskey="w" name="addbbcode16" value="URL" style="text-decoration: underline;" onclick="bbstyle(16)"/>
+					</div>
+						
+					<div>
+						<mx:text id="l_font_color"/>: 
+						<select name="addbbcode18" onchange="bbfontstyle('[color=' + this.form.addbbcode18.options[this.form.addbbcode18.selectedIndex].value + ']', '[/color]');this.selectedIndex=0;">
+							<option style="background-color:black;" value="black">&nbsp;</option>
+							<option style="background-color:darkred;" value="darkred">&nbsp;</option>
+							<option style="background-color:red;" value="red">&nbsp;</option>
+							<option style="background-color:orange;" value="orange">&nbsp;</option>
+							<option style="background-color:brown;" value="brown">&nbsp;</option>
+							<option style="background-color:yellow;" value="yellow">&nbsp;</option>
+							<option style="background-color:green;" value="green">&nbsp;</option>
+							<option style="background-color:olive;" value="olive">&nbsp;</option>
+							<option style="background-color:cyan;" value="cyan">&nbsp;</option>
+							<option style="background-color:blue;" value="blue">&nbsp;</option>
+							<option style="background-color:darkblue;" value="darkblue">&nbsp;</option>
+							<option style="background-color:indigo;" value="indigo">&nbsp;</option>
+							<option style="background-color:violet;" value="violet">&nbsp;</option>
+							<option style="background-color:white;" value="white">&nbsp;</option>
+							<option style="background-color:black;" value="black">&nbsp;</option>
+							</select> &nbsp;
+						<mx:text id="l_font_size"/>:
+						<select name="addbbcode20" onchange="bbfontstyle('[size=' + this.form.addbbcode20.options[this.form.addbbcode20.selectedIndex].value + ']', '[/size]')">
+							<option value="7"><mx:text id="l_font_tiny"/></option>
+							<option value="9"><mx:text id="l_font_small"/></option>
+							<option value="12" selected="selected"><mx:text id="l_font_normal"/></option>
+							<option value="18"><mx:text id="l_font_large"/></option>
+							<option  value="24"><mx:text id="l_font_huge"/></option>
+						</select>
+						<a href="javascript:bbstyle(-1)"><mx:text id="l_bbcode_close_tags"/></a>
+					</div>
+				</mx:bloc id="bbcode">
+				
+				<div>
+					<textarea name="message" id="post_message" rows="60" cols="10" mxAttribut="wrap:message_wrap;tabindex:message_tabindex;onselect:message_onselect;onclick:message_onclick;onkeyup:message_onkeyup"><mx:text id="message_value"/></textarea>
+					<mx:bloc id="formatting">
+						<mx:text id="message_formatting"/>
+					</mx:bloc id="formatting">
+				</div>
+				
+			
+			</div>
+			
+			<mx:bloc id="topic_type">
+				<div class="row topicType">
+					<label for="topic_normal"><mx:text id="type_label"/></label>
+					<span class="groupMultiRadio">
+						<span class="multiRadio topicNormal">
+							<input id="topic_normal" name="type" value="normal" type="radio" class="radio" mxAttribut="checked:normal_checked"/><label for="topic_normal"><mx:text id="normal_label"/></label>
+						</span>
+						<mx:bloc id="sticky">
+							<span class="multiRadio topicSticky">
+								<input id="topic_sticky" name="type" value="sticky" type="radio" class="radio" mxAttribut="checked:sticky_checked"/><label for="topic_sticky"><mx:text id="sticky_label"/></label>
+							</span>
+						</mx:bloc id="sticky">
+						<mx:bloc id="announcement">
+							<span class="multiRadio announcement">
+								<input id="topic_announcement" name="type" value="announcement" type="radio" class="radio" mxAttribut="checked:announcement_checked"/><label for="topic_announcement"><mx:text id="announcement_label"/></label>
+							</span>
+						</mx:bloc id="announcement">
+					</span>
+				</div>
+			</mx:bloc id="topic_type">
+			
+			<mx:bloc id="notify_topic">
+				<div id="notifyTopic"><input id="notify_topic" name="notify_topic" type="checkbox" class="checkbox" mxAttribut="checked:notify_topic_checked"/><label for="notify_topic"><mx:text id="notify_topic_label"/></label></div>
+			</mx:bloc id="notify_topic">
+			
+			<mx:bloc id="captcha">
+				<div id="captcha">
+					<mx:bloc id="captcha_label"><mx:text id="captcha_label" /></mx:bloc id="captcha_label">
+					<mx:bloc id="error_captcha"><div class="error_form"><mx:text id="error_captcha" /></div></mx:bloc id="error_captcha">
+					<mx:text id="captcha" />
+			 	<!-- <input type="text" mXattribut="disabled:disabled:name:name;id:id;value:value;size:size;maxlength:maxlength;class:style" />-->
+				</div>
+			</mx:bloc id="captcha">
+			
+			<mx:bloc id="javascript">
+				<script type="text/javascript">
+					<!--
+					function boardPostCheck() {
+						var nam, ema, sbj,msg;
+						if ((nam=document.getElementById('post_name'))		&& !nam.value) { alert('<mx:text id="no_name_alert"/>');	return false; }
+						if ((ema=document.getElementById('post_email'))		&& !ema.value) { alert('<mx:text id="no_email_alert"/>');	return false; }
+						if ((sbj=document.getElementById('post_subject'))	&& !sbj.value) { alert('<mx:text id="no_subject_alert"/>');	return false; }
+						if ((msg=document.getElementById('post_message'))	&& !msg.value) { alert('<mx:text id="no_message_alert"/>');	return false; }
+						if ((cap=document.getElementById('captchaid'))	&& !cap.value) { alert('<mx:text id="no_captcha_alert"/>'); return false; }
+
+						return true;
+					}
+					//-->
+				</script>
+			</mx:bloc id="javascript">
+			
+			<div class="submit">
+				<input type="hidden" mxAttribut="name:action_name;value:action_value"/>
+				<input type="hidden" name="post_id" mxAttribut="value:post_value"/>
+				<input type="hidden" name="topic_id" mxAttribut="value:topic_value"/>
+				<input type="hidden" name="forum_id" mxAttribut="value:forum_value"/>
+				<input type="submit" mxAttribut="name:preview_name;value:preview_value;onclick:preview_onclick"/>
+				<input type="submit" mxAttribut="name:submit_name;value:submit_value;onclick:submit_onclick"/>
+			</div>
+		</fieldset>
+	</form>
+	
+</div>

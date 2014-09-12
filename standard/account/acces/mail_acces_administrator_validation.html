@@ -1,0 +1,37 @@
+	<mx:bloc id="messageHTML">
+		<html>
+			<body>
+				<mx:text id="date"/><br />
+				Bonjour,<br />
+				Vous avez une demande d'inscription sur le site <mx:text id="webmaster_name" /> coté publique<mx:bloc id="heading"> (Pour la page <mx:text id="heading" />)</mx:bloc id="heading">.<br />
+				<mx:bloc id="form">
+					<mx:text id="fields" /> : <mx:text id="data" /><br>
+				</mx:bloc id="form">
+				Cliquez sur le lien suivant pour valider cette inscription :<br />
+				<a mXattribut="href:href" ><mx:text id="url" /></a><br />
+				Note : Attention, si le lien est passé sur deux lignes, il risque de ne pas fonctionner.<br />
+				Vous devrez alors le recopier en entier dans la barre d'adresses de votre navigateur.<br />
+				<br />
+				A bientôt,<br />
+				<mx:text id="webmaster_name" /> 
+			</body>
+		</html>
+	</mx:bloc id="messageHTML">
+	
+	<mx:bloc id="messageTXT">
+
+		<mx:text id="date"/>
+		Bonjour,
+		Vous avez une demande d'inscription sur le site <mx:text id="webmaster_name" /> coté publique<mx:bloc id="heading"> (Pour la page <mx:text id="heading" />)</mx:bloc id="heading">.
+		<mx:bloc id="form">
+			<mx:text id="fields" /> : <mx:text id="data" />
+		</mx:bloc id="form">
+		Cliquez sur le lien suivant pour valider cette inscription :
+		<mx:text id="url" />
+		Note : Attention, si le lien est passé sur deux lignes, il risque de ne pas fonctionner.
+		Vous devrez alors le recopier en entier dans la barre d'adresses de votre navigateur.
+		
+		A bientôt,
+		<mx:text id="webmaster_name" /> 
+
+	</mx:bloc id="messageTXT">	

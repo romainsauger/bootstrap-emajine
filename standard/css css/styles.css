@@ -1,0 +1,111 @@
+@charset "iso-8859-1";
+
+@import url(gallery.css);
+@import url(elements.css);
+@import url(structure.css);
+@import url(navigationElements.css);
+@import url(form.css);
+@import url(boxes.css);
+@import url(account.css);
+@import url(catalog.css);
+@import url(publicationMethods.css);
+@import url(search.css);
+@import url(board.css);
+@import url(ads.css);
+@import url(directory.css);
+@import url(community.css);
+
+/* ---------------------
+INITIALISATION DES STYLES
+------------------------*/
+* {
+	border: 0;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+/* --------------
+ZONE EXTERIEURE
+-----------------*/
+body {
+	/* Image de l'arrière-plan de la page */
+	background: #000000 url(../images/images/body-bg.jpg) no-repeat scroll center top;
+	color:#878787;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	line-height:160%;
+}
+
+/* ---------------
+APPARENCE DES IMAGES
+-----------------*/
+img {
+	border:0;
+	vertical-align: bottom;
+}
+
+/* --------------
+CALAGE DES BLOCS
+-----------------*/
+.clear {
+	border:0;
+	clear: both;
+	height:0;
+	line-height:0;
+	visibility: hidden;
+}
+.home #text{
+position: relative;
+}
+.bloc_slider{
+position:absolute;
+top:-3px;
+left:-231px;
+}
+.bloc_gauche{
+width:436px;
+position:absolute;
+top:331px;
+left:-231px;
+}
+.bloc_droite{
+width:436px;
+position:absolute;
+top:331px;
+left:262px;
+}
+.home #leftbar{
+padding: 495px 0 0 0;
+}
+.bloc_catalogue{
+position:absolute;
+top:496px;
+left:0;
+}
+
+/*-----Divers------*/
+.bouton_login{
+	padding: 7px 0;
+}
+
+/* -----------------------
+DECLARATION DES COULEURS
+ET DES IMAGES
+POUR LA PERSONNALISATION DU THEME
+A L'AIDE DU PARSEUR.
+PEUT ETRE SUPPRIME
+------------------------*/
+#colorsDefinition {
+/** couleur d'arrière plan */
+color:#000000;
+/** couleur des textes */
+color:#666666;
+/** couleur des titres */
+color:#000000;
+/** couleur des liens */
+color:#6B5A4D;
+/** couleur des liens survolés */
+color:#ffffff;
+}

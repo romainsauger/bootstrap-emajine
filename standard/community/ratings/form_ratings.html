@@ -1,0 +1,47 @@
+	<form mXattribut="action:action" method="post">
+		<fieldset>
+			<label mXattribut="for:for"><mx:text id="label" /> : </label>
+			<div mXattribut="id:id">
+				<select mXattribut="name:name;disabled:disabled">
+					<mx:bloc id="options">
+						<option mXattribut="value:value;selected:selected"><mx:text id="option" /></option>
+					</mx:bloc id="options">
+				</select>
+			</div>
+			
+			<div>
+				<!-- Affichage de l'equivalent texte de chaque note (au survol des etoiles) -->
+				<span mXattribut="id:idcaption"></span>
+			</div>
+			
+			<div mXattribut="style:style;id:idinforating">
+				<!-- Affichage de la moyenne -->
+				<mx:bloc id="avg_rating">
+					<mx:text id="label" /> : <span mXattribut="id:id"><mx:text id="avg" /></span>
+				</mx:bloc id="avg_rating">
+				
+				<!-- Affichage du nombre de votes -->
+				<mx:bloc id="nb_ratings">
+					 <mx:text id="label" /> : <span mXattribut="id:id"><mx:text id="nb" /></span>
+				</mx:bloc id="nb_ratings">
+				
+				<!-- Affichage de la date du dernier vote -->
+				<mx:bloc id="date_last_rating">
+					(<mx:text id="label" /> <span mXattribut="id:id"><mx:text id="date" /></span>)
+				</mx:bloc id="date_last_rating">
+			</div>
+			
+			<!-- Message affiche lorsque l'utilisateur doit s'identifier pour voter -->
+			<span mXattribut="id:iddisabled"><mx:text id="msg_disabled" /></span>
+			<!-- Message affiche lorsque l'utilisateur a deja vote -->
+			<span mXattribut="id:idalreadyrate"><mx:text id="msg_alreadyrate" /></span>
+			
+			<mx:bloc id="js"><mx:text id="code" /></mx:bloc id="js">
+			
+			<mx:bloc id="sbmt">
+				<noscript>
+					<div class="submit"><input type="submit" name="submit_rating" mXattribut="value:value_submit" /></div>
+				</noscript>
+			</mx:bloc id="sbmt">
+		</fieldset>
+	</form>

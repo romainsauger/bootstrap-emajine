@@ -1,0 +1,59 @@
+<div id="article">
+  <mx:bloc id="articles">
+  	<!--
+  		<h1><mx:text id="article_title" /></h1>
+  		<mx:text id="chapo" />
+  		<mx:text id="imgchapo" />
+  	-->
+
+    <div id="text">
+      <mx:text id="article"/>
+    </div>
+
+    <div id="view_more">
+    	<mx:bloc id="view_more">
+      	<div id="infos">
+        	<h3>En savoir plus : </h3>
+        	<mx:text id="view_more" />
+      	</div>
+    	</mx:bloc id="view_more">
+    
+    	<mx:bloc id="view_more_links">
+      	<div id="links">
+        	<h3>Liens connexes : </h3>
+        	<ul>
+          	<mx:bloc id="links">
+            	<li><a mXattribut="href:href;hreflang:hreflang;title:title"><mx:text id="link" /></a></li>
+          	</mx:bloc id="links">
+        	</ul>
+      	</div>
+    	</mx:bloc id="view_more_links">  
+    </div>
+
+  </mx:bloc id="articles">
+	<mx:bloc id="author"><div class="author"> <mx:text id="author" /></mx:bloc id="author"></div>
+
+	<!--<ul class="articleAction">
+    	<li class="react"><mx:reacttoarticle title="R&eacute;agir &agrave; l'article" content="R&eacute;agir" /></li>
+    	<li class="send"><mx:sendarticle title="Envoyer l'article" content="Envoyer l'article" /></li>
+    	<mx:bloc id="links_comments">
+    		<mx:bloc id="view_comments"><li><a mXattribut="href:href;hreflang:hreflang;title:title"><mx:text id="view_comments" /></a></li></mx:bloc id="view_comments">
+    		<mx:bloc id="add_comment"><li><a mXattribut="href:href;hreflang:hreflang;title:title"><mx:text id="add_comment" /></a></li></mx:bloc id="add_comment">
+    	</mx:bloc id="links_comments">
+	</ul>-->
+	
+	<!-- Donnees relative aux notes -->
+	<mx:bloc id="ratings_datas">
+		<div class="ratingsDatas" ><mx:text id="content" /></div>
+	</mx:bloc id="ratings_datas">
+
+	<!-- Liste des commentaires -->
+	<mx:bloc id="list_comments">
+		<div class="listComments" ><mx:text id="content" /></div>
+	</mx:bloc id="list_comments">
+
+	<!-- Formulaire d'ajout de commentaire -->
+	<mx:bloc id="form_add_comment">
+		<div class="addComments" ><mx:text id="content" /></div>
+  </mx:bloc id="form_add_comment">
+</div>

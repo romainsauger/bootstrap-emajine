@@ -1,0 +1,45 @@
+<div class="formulaire">
+  <form method="post" mXattribut="action:Form_action" id="form" enctype="multipart/form-data" class="form-horizontal">
+    <fieldset>
+      <mx:bloc id="legend">
+        <legend><mx:text id="legend" /></legend>
+      </mx:bloc id="legend">
+      <mx:bloc id="fields_form">
+        
+        <div class="form-group">
+          <label mXattribut="for:for;class:error1" class="control-label col-sm-3 ">
+            <mx:text id="fields_name"/>
+              <mx:bloc id="obligatory">
+                &nbsp;<span class="obligatory"><mx:text id="fields_obligatory"/></span>
+            </mx:bloc id="obligatory"> :
+          </label>
+          <span mXattribut="class:error2" class="col-sm-6"><mx:text id="fields_input"/></span>
+          <mx:bloc id="error_message"><div class="errorForm col-sm-3"><mx:text id="fields_error"/></div></mx:bloc id="error_message">
+          <mx:bloc id="help">
+            <span class="helpform">
+              <a mXattribut="href:href;hreflang:hreflang;title:title;onclick:onclick"><img mXattribut="src:src;alt:alt" /></a>
+            </span>
+          </mx:bloc id="help">
+        </div>
+      </mx:bloc id="fields_form">
+    </fieldset>
+    
+   	 <mx:bloc id="captcha"> 
+				<div id="captcha"> 
+				<mx:bloc id="error_msg"><div class="errorForm"><mx:text id="error_msg" /></div></mx:bloc id="error_msg"> 
+					<mx:text id="captcha_label" /> 
+					<span mXattribut="class:error1"><mx:text id="captcha"/></span>
+				</div> 
+			</mx:bloc id="captcha"> 
+			<div class="bt_row">
+      <div class="submit  col-md-6 col-md-push-3">
+        <mx:bloc id="fields_submit">
+          <mx:text id="fields_input"/>
+        </mx:bloc id="fields_submit">
+      </div>
+      <mx:bloc id="hidden">
+        <mx:text id="fields_input"/>
+      </mx:bloc id="hidden">
+    </div>
+  </form>
+</div>

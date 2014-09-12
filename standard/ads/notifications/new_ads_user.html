@@ -1,0 +1,26 @@
+<!-- Bloc qui contient le message qui sera envoyé à l'annonceur pour le prevenir que son annonce a bien été enregistrée-->
+<mx:bloc id="objet">Votre annonce sur {SITENAME}</mx:bloc id="objet">
+
+<h2>Votre annonce sur <mx:text id="site" /></h2>
+
+<!-- <mx:text id="id_annonce" /> -->
+
+<!-- Ce bloc sera utilisé dans le cas d'une annonce soumise à moderation -->
+<!-- Le contenu de ce bloc sera celui defini dans CONFIGURATION>MODERATION>GESTION DES NOTIFICATION -->
+<mx:bloc id="msg_moderation">
+	<mx:text id="content" />
+</mx:bloc id="msg_moderation">
+
+<!-- Ce bloc sera utilisé dans le cas d'une annonce non soumise à moderation -->
+<mx:bloc id="msg_no_moderation">
+	<mx:text id="content" />
+</mx:bloc id="msg_no_moderation">
+
+<!-- Bloc utilisé pour donner les informations relatives au paiement (ce bloc est supprimé s'il n'y a pas de paiement)-->
+<mx:bloc id="info_paiement">
+	<mx:text id="content" />
+</mx:bloc id="info_paiement">
+
+<mx:bloc id="info_formule">
+	<mx:text id="content" />
+</mx:bloc id="info_formule">

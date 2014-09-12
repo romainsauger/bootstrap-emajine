@@ -1,0 +1,30 @@
+<div class="box boxWeather" mXattribut="class:box_class">
+  <mx:bloc id="widgetTitle"><h4><mx:text id="widgetTitle" /></h4></mx:bloc id="widgetTitle">
+  
+  <div class="widgetContainer">
+		<mx:bloc id="weather_forecast">
+			<a mXattribut="href:href;hreflang:hreflang;title:title" class="boxweatherLink" ><span><mx:text id="link" /></span></a>
+		</mx:bloc id="weather_forecast">  
+		<h3><mx:text id="town" /></h3>
+		<div class="boxWeatherPicture" ><img mXattribut="src:src;alt:alt" /></div>
+			<span class="temperature"><mx:text id="temperature" /></span>
+  
+		<mx:bloc id="town_selector">
+			<form id="townselectionweather" mXattribut="action:action" method="post">
+				<fieldset>
+				<div class="row">
+						<label for="select_townselectionweather">Changer de ville</label>
+						<select name="select_townselectionweather" id="select_townselectionweather">
+						<mx:bloc id="options"><option mXattribut="value:value;selected:selected"><mx:text id="option" /></option></mx:bloc id="options">
+						</select>
+				</div>
+				</fieldset>
+				<div class="submit">
+					<input type="submit" name="submittownselectionweather" mXattribut="value:value" />
+				</div>
+			</form>
+		</mx:bloc id="town_selector">
+  </div>
+  
+  <div class="widgetFooter"></div>
+</div>

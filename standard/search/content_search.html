@@ -1,0 +1,128 @@
+    <mx:bloc id="quick_search_form">
+      <div id="searchForm">
+        <form id="searchformcontent" method="post" mXattribut="action:action">
+          <fieldset>
+            <legend><mx:text id="legend" /></legend>
+            <input type="text" name="q" class="wordscontent" />
+            <div class="submit">
+              <input type="submit" name="searchbutton" mXattribut="value:searchsubmitvalue" />
+            </div>
+          </fieldset>
+        </form>
+        <mx:bloc id="advanced"><a mXattribut="href:href;hreflang:hreflang:title:title"><mx:text id="advanced" /></a></mx:bloc id="advanced">
+      </div>
+    </mx:bloc id="quick_search_form">
+    
+    <mx:bloc id="advanced_search_form">
+      <div id="advancedSearchform">
+        <form id="searchformcontent" method="post" mXattribut="action:action">
+          <fieldset>
+            <legend><mx:text id="legend" /></legend>
+            
+            <mx:bloc id="restrict">
+              <div class="row quickSearchRestrict">
+                <span class="label">
+                  <label for="restrict"><mx:text id="label" /></label>
+                </span>
+                <span class="fields">
+                  <select id="restrict" name="ul">
+                    <mx:bloc id="options"><option mXattribut="selected:selected;value:value"><mx:text id="option" /></option></mx:bloc id="options">
+                  </select>
+                </span>
+              </div>
+            </mx:bloc id="restrict">
+            
+            <mx:bloc id="method">
+              <div class="row quickSearchMethod">
+                <span class="label">
+                  <label for="method"><mx:text id="label" /></label>
+                </span>
+                <span class="fields">
+                  <select id="method" name="m">
+                    <mx:bloc id="options"><option mXattribut="selected:selected;value:value"><mx:text id="option" /></option></mx:bloc id="options">
+                  </select>
+                </span>
+              </div>
+            </mx:bloc id="method">    
+                  
+            <mx:bloc id="sort">
+              <div class="row quickSearchSort">
+                <span class="label">
+                  <label for="sort"><mx:text id="label" /></label>
+                </span>
+                <span class="fields">  
+                  <select id="sort" name="s">
+                    <mx:bloc id="options"><option mXattribut="selected:selected;value:value"><mx:text id="option" /></option></mx:bloc id="options">
+                  </select>
+                </span>
+              </div>
+            </mx:bloc id="sort">  
+            
+            <mx:bloc id="matches_per_page">
+              <div class="row quickSearchMatchesPerPage">
+                <span class="label">
+                  <label for="matchesperpage"><mx:text id="label" /></label>
+                </span>
+                <span class="fields">
+                  <select id="matchesperpage" name="ps">
+                    <mx:bloc id="options"><option mXattribut="selected:selected;value:value"><mx:text id="option" /></option></mx:bloc id="options">
+                  </select>
+                </span>
+              </div>
+            </mx:bloc id="matches_per_page">
+  
+            <mx:bloc id="search_zone">
+              <div class="row quickSearchZone">
+                <span class="label">
+                  <label for="searchzone"><mx:text id="label" /></label>
+                </span>
+                <span class="fields"
+                  <select id="searchzone" name="wf">
+                    <mx:bloc id="options"><option mXattribut="selected:selected;value:value"><mx:text id="option" /></option></mx:bloc id="options">
+                  </select>
+                </span>
+              </div>
+            </mx:bloc id="search_zone">
+            
+            <mx:bloc id="output_format">
+              <div class="row quickSearchOutput">
+                <span class="label">
+                  <label for="outputformat"><mx:text id="label" /></label>
+                </span>
+                <span class="fields">
+                  <select id="outputformat" name="fmt">
+                    <mx:bloc id="options"><option mXattribut="selected:selected;value:value"><mx:text id="option" /></option></mx:bloc id="options">
+                  </select>
+                </span>
+              </div>
+            </mx:bloc id="output_format">          
+            
+            <mx:bloc id="synonyms">
+              <div class="row quickSearchSynonyms">
+                <span class="label">
+                  <label for="synonyms"><mx:text id="label" /></label>
+                </span>
+                <span class="fields">
+                  <select id="synonyms" name="sy">
+                    <mx:bloc id="options"><option mXattribut="selected:selected;value:value"><mx:text id="option" /></option></mx:bloc id="options">
+                  </select>
+                </span>
+              </div>
+            </mx:bloc id="synonyms">
+            
+            <div class="row quickSearchWord">
+                <span class="label">
+                  <label for="q">Mot ou expression &agrave; rechercher</label>
+                </span>
+                <span class="fields">
+                  <input type="text" name="q" class="wordsbox" />
+                </span>
+            </div>
+            
+          </fieldset>
+            <div class="submit">
+              <input type="submit" name="searchbutton" mXattribut="value:searchsubmitvalue" />
+            </div>
+        </form>
+      </div>
+    </mx:bloc id="advanced_search_form">  

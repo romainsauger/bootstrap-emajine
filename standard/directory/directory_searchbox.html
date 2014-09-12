@@ -1,0 +1,24 @@
+<div class="widget widgetDirectorySearch" mXattribut="class:box_class">
+	<mx:bloc id="widgetTitle"><h4><mx:text id="widgetTitle" /></h4></mx:bloc id="widgetTitle">
+
+	<div class="widgetContainer">
+  		<form class="boxDirectorySearchForm" method="post" mXattribut="action:action">
+    		<fieldset>
+      		<div class="row">
+      		<label mXattribut="for:input_for_id"><mx:text id="input_label"/></label>
+      		<input type="text" mXattribut="name:input_name;id:input_id;value:input_value" class="wordsbox"/>
+      		</div>
+    		</fieldset>
+      		<div class="submit">
+      		<input type="submit" mXattribut="value:submit_value;name:submit_name" />
+      		</div>
+  		</form>
+
+  		<mx:bloc id="last_search">
+    		<a mXattribut="href:href;hreflang:hreflang:title:title" class="widgetDirectorySearchLastSearch" ><span><mx:text id="last_search"/></span></a>
+  		</mx:bloc id="last_search">
+
+  	</div>
+  
+  <div class="widgetFooter"></div>
+</div>

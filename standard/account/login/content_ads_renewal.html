@@ -1,0 +1,188 @@
+<div id="contentAdsRenewal">
+
+<!-- Choix de la formule de renouvellement -->
+<mx:bloc id="chooseFormule">
+
+	<div id="steps">
+		<span class="active">Choix de la formule</span>
+		<span>Validation</span>
+	</div>
+	
+	<mx:bloc id="bk"><a mXattribut="href:href;hreflang:hreflang;title:title"><mx:text id="back" /></a></mx:bloc id="bk">
+	
+	<!-- Affichage d'un msg d'erreur si aucune formule n'est disponible	 -->
+	<mx:bloc id="noFormuleFound">
+		<p class="noFormuleFound" ><mx:text id="msg" /></p>
+		<a mXattribut="href:href;hreflang:hreflang;title:title" class="noFormuleFoundBack" ><span><mx:text id="back" /></span></a>
+	</mx:bloc id="noFormuleFound">
+	
+	<!-- Affichage des differentes formules -->
+	<mx:bloc id="formule">
+		<div>
+			<!-- Liebelle de la formule -->
+			<h3><mx:text id="libelle" /></h3>
+			<!--<mx:bloc id="display_type">thumbnail</mx:bloc id="display_type"> Type d'affichage de l'image : thumbnail / fullsize-->
+			
+			<!-- Image -->
+			<mx:bloc id="img">
+				<div class="contentAdsRenewalImg" ><mx:text id="image" /></div>
+			</mx:bloc id="img">
+			
+			<!-- Description -->
+			<mx:bloc id="description">
+				<div class="contentAdsRenewalDescription" ><mx:text id="description" /></div>
+			</mx:bloc id="description">
+			
+			<!-- Duree -->
+			<mx:bloc id="duree">
+				<div class="contentAdsRenewalDuree" ><mx:text id="duree" /></div>
+			</mx:bloc id="duree">
+			
+			<!-- Prix -->
+			<mx:bloc id="prix">
+				<div class="contentAdsRenewalPrix">
+					<p><mx:text id="prix" /></p>
+					<p>Prix HT : <mx:text id="prixHt" /></p>
+					<p>Prix TTC : <mx:text id="prixTtc" /></p>
+					<p>TVA : <mx:text id="tauxTva" /></p>
+					<p>Montant TVA : <mx:text id="montantTva" /></p>
+				</div>
+			</mx:bloc id="prix">
+			<a mXattribut="href:href;hreflang:hreflang;title:title" class="contentAdsRenewalChoose" ><span><mx:text id="choose" /></span></a>
+		</div>
+	</mx:bloc id="formule">
+</mx:bloc id="chooseFormule">
+
+<mx:bloc id="validation">
+	
+	<div id="steps">
+		<span>Choix de la formule</span>
+		<span class="active">Validation</span>
+	</div>
+	
+	<h2><mx:text id="libelle_annonce" /></h2>
+	
+	<!-- Formule  sans payement-->
+	<mx:bloc id="formule_no_payment">
+		<fieldset>
+		<legend><mx:text id="legend" /></legend>
+		<div>	
+			<ul>
+			<li><strong><mx:text id="label" /> : </strong><mx:text id="libelle" /></li>
+				<!-- Duree de publication -->
+				<mx:bloc id="duree">
+					<li><strong><mx:text id="label" /> : </strong><mx:text id="duree" /></li>
+				</mx:bloc id="duree">
+			</ul>
+			<mx:bloc id="edit">
+				<a mXattribut="href:href;hreflang:hreflang;title:title" class="contentAdsRenewalEdit"><span><mx:text id="edit" /></span></a>
+			</mx:bloc id="edit">
+		</div>
+	</mx:bloc id="formule_no_payment">
+	
+	<!-- Formule avec payement-->
+	<mx:bloc id="formule_payment">
+		<fieldset>
+		<legend><mx:text id="legend" /></legend>
+		<div>	
+			<table>
+				<thead>
+					<mx:bloc id="thead">
+						<th><mx:text id="libelle" /></th>
+						<th><mx:text id="duree" /></th>
+						<th><mx:text id="prix" /></th>
+					</mx:bloc id="thead">
+				</thead>
+				<tbody>
+					<mx:bloc id="info_formule">
+						<tr>
+							<td><mx:text id="libelle" /></td>
+							<td><mx:text id="duree" /></td>
+							<td><mx:text id="prix" /></td>
+						</tr>
+					</mx:bloc id="info_formule">
+					<mx:bloc id="tva">
+						<tr>
+							<td colspan="2"><mx:text id="libelle" /></td>
+							<td><mx:text id="tva" /></td>
+						</tr>
+						<tr>
+							<td colspan="2"><mx:text id="libelleTaux" /></td>
+							<td><mx:text id="tauxTva" /></td>
+						</tr>
+					</mx:bloc id="tva">
+					<mx:bloc id="prix_total">
+						<tr>
+							<td colspan="2"><mx:text id="libelle" /></td>
+							<td><mx:text id="prixTtc" /></td>
+						</tr>
+					</mx:bloc id="prix_total">
+				</tbody>
+			</table>
+			<mx:bloc id="edit">
+				<a mXattribut="href:href;hreflang:hreflang;title:title" class="contentAdsRenewalEdit"><span><mx:text id="edit" /></span></a>
+			</mx:bloc id="edit">
+		</div>
+		
+		<mx:bloc id="payment_modules">
+			<div id="paymentModule">
+				<h3><mx:text id="title" /></h3>
+				<form method="post" mXattribut="action:action" id="choosePaymentModule">
+				<mx:bloc id="payment_modules_list">
+					<div class="row">
+						<input type="radio" name="paymentmodule" mXattribut="id:id;value:value;checked:checked" class="radio"/>
+						<label mXattribut="for:for">&nbsp;<mx:text id="label" /></label>
+					</div>
+				</mx:bloc id="payment_modules_list">
+				<div class="submit">
+					<input type="submit" name="submitChoosePaymentModule" mXattribut="value:value" /></a>
+				</div>
+				</form>
+			</div>
+		</mx:bloc id="payment_modules">
+		
+		<mx:bloc id="payment">
+			<div id="paymentInfos">
+				<mx:text id="payment_infos" />
+			</div>
+		</mx:bloc id="payment">
+		
+		<mx:bloc id="payment_method">
+			<div id="paymentActions">
+				<a name="paymentmethod"></a>
+				<h2><mx:text id="title" /></h2>
+				<mx:text id="payment_method" />
+				<a mXattribut="href:href;hreflang:hreflang;title:title"><mx:text id="change_payment_method" /></a><br />
+			</div>
+		</mx:bloc id="payment_method">
+		
+		<mx:bloc id="footer">
+			<div id="cartFooter">
+				<p><mx:text id="thanks" /></p>
+				<a mXattribut="href:hrefsite;hreflang:hreflangsite;title:titlesite" class="contentAdsRenewalThanks" ><span><mx:text id="site" /></span></a><br />
+			</div>
+		</mx:bloc id="footer">
+		
+	</mx:bloc id="formule_payment">
+	
+	<mx:bloc id="submit">
+		<div class="submit">
+			<a mXattribut="href:href;title:title;hreflang:hreflang"><input type="button" mXattribut="value:value" /></a>
+		</div>
+	</mx:bloc id="submit">
+</mx:bloc id="validation">
+
+<!-- Bloc pour l'affichage du message de confirmation d'enregistrement du renouvellement -->
+<mx:bloc id="msg_save">
+	<div  id="msgSave">Le renouvellement a bien &eacute;t&eacute; enregistr&eacute;.</div>
+</mx:bloc id="msg_save">
+
+<!-- Affichage d'un msg d'erreur si aucun renouvellement n'est possible	 -->
+<mx:bloc id="error">
+	<div id="error">
+		<p><mx:text id="error_msg" /></p>
+		<mx:bloc id="bk"><a mXattribut="href:href;hreflang:hreflang;title:title"><mx:text id="label" /></a></mx:bloc id="bk">
+	</div>
+</mx:bloc id="error">
+
+</div>

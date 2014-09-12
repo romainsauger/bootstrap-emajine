@@ -1,0 +1,88 @@
+<div id="ads">
+
+	<!-- Formulaire d'acces rapide aux categories -->
+	<mx:bloc id="selection_tree">
+		<form id="formArboSelect" method="post" mXattribut="action:action">
+		<fieldset>
+			<legend>Acc&eacute;der directement aux cat&eacute;gories</legend>
+			<div class="row">
+				<label for="arboselect">Choix de la cat&eacute;gorie :</label>
+				<select name="arboselect" id="arboselect" onchange="submit();">
+					<mx:bloc id="options">
+						<option mXattribut="value:value;selected:selected;"><mx:text id="option" /></option>
+					</mx:bloc id="options">
+				</select>
+			</div>
+		</fieldset>
+		<noscript>
+			<div class="submit">
+				<input type="submit" name="valid" mXattribut="value:value" />
+			</div>
+		</noscript>
+		</form>
+	</mx:bloc id="selection_tree">
+	
+	<!-- Affichage du libellé de la catégorie courante -->
+	<h1><mx:text id="category_label" /></h1>
+  
+	<div id="adsPresentation">
+		<mx:bloc id="category_picture">
+			<!--<mx:bloc id="display_type">thumbnail</mx:bloc id="display_type"> Type d'affichage de l'image : thumbnail / fullsize-->
+			<div class="categoryPicture"><mx:text id="category_picture" /></div>
+		</mx:bloc id="category_picture">
+		<mx:bloc id="category_description">
+			<div class="categoryDescription"><mx:text id="category_description" /></div>
+		</mx:bloc id="category_description">
+		<hr class="clear" />
+	</div>
+	
+	<!-- Affichage d'un message dans le cas ou il n'y a pas d'annonces dans la categorie -->
+	<!-- <mx:bloc id="no_entries">
+		<div class="msg_no_entries"><mx:text id="msg" /></div>
+	</mx:bloc id="no_entries"> -->
+	
+	<!-- Affichage des catégories enfantes pour la navigation -->
+	<div id="childrenSelector">
+		<mx:bloc id="children_categories">
+			<div mXattribut="class:class">
+				<mx:bloc id="links">
+					<div mXattribut="id:id;class:class">
+						<div class="adsCategory">
+							<div class="adsCategoryContainer">
+								<h2><mx:text id="libelle" /></h2>
+								<mx:bloc id="picture"><div class="picture"> <mx:text id="picture" /></div></mx:bloc id="picture">
+								<mx:bloc id="description"><div class="description" ><mx:text id="description" /></div></mx:bloc id="description">
+								<div class="viewAd"><a mXattribut="href:href;hreflang:hreflang;title:title" class="adsCategoryLink" ><span><mx:text id="link"/></span></a></div>
+							</div>
+						</div>
+					</div>
+				</mx:bloc id="links">
+			</div>
+			<!--Choix du nombre de categories par lignes.
+			<mx:bloc id="categories_number_per_line">3</mx:bloc id="categories_number_per_line">-->
+		</mx:bloc id="children_categories">
+	</div>
+	
+	<!-- Affichage des entrées de la catégorie -->
+	<mx:bloc id="entries">
+		<div mXattribut="id:id;class:class">
+			<mx:bloc id="entry">
+			<div mXattribut="id:id;class:class">
+				<div class="adsEntrySummary">
+					<mx:text id="short_entry" /><!-- template ads_entry_summary.html -->
+				</div>
+			</div>
+			</mx:bloc id="entry">
+		</div>
+	</mx:bloc id="entries">
+  
+	<mx:bloc id="pager">
+		<mx:bloc id="first">&lt;&lt;</mx:bloc id="first">
+		<mx:bloc id="previous">&lt;</mx:bloc id="previous">
+		<mx:bloc id="last">&gt;&gt;</mx:bloc id="last">
+		<mx:bloc id="next">&gt;</mx:bloc id="next">
+		<mx:bloc id="separator">&nbsp;</mx:bloc id="separator">
+		<div class="pager"><mx:bloc id="items"><mx:text id="spacer" /><a mXattribut="href:href;hreflang:hreflang;title:title;class:class"><mx:text id="item" /></a></mx:bloc id="items"></div>
+	</mx:bloc id="pager">
+	
+</div>

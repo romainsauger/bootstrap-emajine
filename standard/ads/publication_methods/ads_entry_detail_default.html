@@ -1,0 +1,72 @@
+<div class="adsEntryDetailDefault" >
+
+	<!--General ads entry label-->
+	<mx:bloc id="label">
+		<h1><mx:text id="label" /></h1>
+	</mx:bloc id="label">
+
+	<mx:bloc id="pubDate">
+		<div class="pubDate" >
+			<span><mx:text id="pubDate" /></span>
+		</div>
+	</mx:bloc id="pubDate">
+	
+	<!--Affichage de la date d'échéance-->
+	<mx:bloc id="endDate">
+		<div class="endDate" >
+			<span><mx:text id="endDate" /></span>
+		</div>
+	</mx:bloc id="endDate">
+
+	<!-- Propriétés complémentaire-->
+	<mx:bloc id="additionnals_properties">
+		<div class="additionnalsProperties" >
+			<div mXattribut="class:class"><span class="label" ><mx:text id="label" /> : </span><span class="value" ><mx:text id="value" /></span></div>
+		</div>
+	</mx:bloc id="additionnals_properties">
+	
+	<!-- Bloc d'affichage des coordonnees de l'annonceur -->
+	<mx:bloc id="contact_coords">
+		<div id="contactCoords">
+			<mx:bloc id="link">
+				<a mXattribut="href:href;hreflang:hreflang;title:title" class="contactCoordsLink" ><span><mx:text id="label" /></span></a>
+			</mx:bloc id="link">
+			<mx:bloc id="coords">
+				<div id="coords" >
+					<mx:text id="coords" />
+				</div>
+			</mx:bloc id="coords">
+		</div>	
+	</mx:bloc id="contact_coords">
+
+	<!-- Bloc d'affichage du formulaire de prise de contact -->
+	<mx:bloc id="contact_form">
+		<div id="contactForm">
+			<mx:bloc id="link">
+				<a mXattribut="href:href;hreflang:hreflang;title:title" class="contactFormLink"><span><mx:text id="label" /></span></a>
+			</mx:bloc id="link">
+			<mx:bloc id="form">
+				<mx:text id="form" />
+			</mx:bloc id="form">
+		</div>	
+	</mx:bloc id="contact_form">
+	
+	<!-- Donnees relative aux notes -->
+	<mx:bloc id="ratings_datas">
+		<div class="ratingsDatas" ><mx:text id="content" /></div>
+	</mx:bloc id="ratings_datas">
+
+	<!-- Lien pour revenir à la catégorie -->
+	<a mXattribut="href:href;hreflang:hreflang;title:title" class="back" ><mx:text id="back" /></a>
+
+	
+		<!--Gestion d'un pager pour aller directement d'une annonce a l'autre -->
+	<mx:bloc id="pager">
+		<div class="pager">
+			<mx:bloc id="previous"><a mXattribut="href:href;hreflang:hreflang;title:title" class="adsEntryDetailDefaultPreviousAds" ><span><mx:text id="previous_ads" /></span></a></mx:bloc id="previous">
+			<mx:bloc id="next"><a mXattribut="href:href;hreflang:hreflang;title:title" class="adsEntryDetailDefaultNextAds"><span><mx:text id="next_ads" /></span></a></mx:bloc id="next">
+		</div>
+	</mx:bloc id="pager">
+
+
+</div>

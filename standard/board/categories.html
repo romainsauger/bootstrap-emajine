@@ -1,0 +1,63 @@
+<div class="boardCategories">
+  <table>
+<!--
+  // Au lieu de répéter les en-tetes pous chaque catégorie, il est possible de les mettre dans un thead.
+    <thead>
+      <tr>
+        <th colspan="2" ><mx:text id="hForum"/></th>
+        <th><mx:text id="hTopics"/></th>
+        <th><mx:text id="hPosts"/></th>
+        <th><mx:text id="hLastPost"/></th>
+      </tr>
+    </thead>
+-->
+    <tbody>
+      <mx:bloc id="category">
+        <tr>
+          <td colspan="5" class="boardCategory"><h3><mx:text id="category"/></h3></td>
+        </tr>
+        <tr>
+          <th colspan="2" ><mx:text id="hForum"/></th>
+          <th><mx:text id="hTopics"/></th>
+          <th><mx:text id="hPosts"/></th>
+          <th><mx:text id="hLastPost"/></th>
+        </tr>
+        <mx:bloc id="forum">
+          <tr>
+            <td class="boardForumFlag">
+              <div mXattribut="class:flag_class"/>
+            </td>
+            <td class="boardForumForum">
+              <h4><a mXattribut="href:title_href;hreflang:title_hreflang:title:title_title;onclick:title_onclick" class="boardForumForumLink" ><span><mx:text id="title"/></span></a></h4>
+              <!-- Le bloc description et le bloc moderators peuvent etre effaces -->
+              <mx:bloc id="description"><p><mx:text id="description"/></p></mx:bloc id="description">
+              <mx:bloc id="moderators">
+                <p>
+                  <strong><mx:text id="moderator_label"/></strong> : 
+                  <mx:bloc id="moderator"><mx:text id="moderator"/>&nbsp;</mx:bloc id="moderator">
+                </p>
+              </mx:bloc id="moderators">
+            </td>
+            <td class="boardForumTopics"><mx:text id="topics"/></td>
+            <td class="boardForumPosts"><mx:text id="posts"/></td>
+            <td class="boardForumLastpost">
+              <mx:bloc id="lastPost">
+                <a mXattribut="href:post_href;hreflang:post_hreflang:title:post_title;onclick:post_onclick" class="lastPost">
+                  <div class="lastPostDate" ><span><mx:text id="lastPostDate"/></span></div>
+                  <div class="lastPoster" ><span><mx:text id="lastPoster"/></span></div>
+                </a>
+              </mx:bloc id="lastPost">
+            </td>
+          </tr>
+        </mx:bloc id="forum">
+        
+        <mx:bloc id="no_forum">
+          <tr>
+            <td colspan="5" class="boardMessage"><mx:text id="message"/></td>
+          </tr>
+        </mx:bloc id="no_forum">
+        
+      </mx:bloc id="category">
+    </tbody>
+  </table>
+</div>

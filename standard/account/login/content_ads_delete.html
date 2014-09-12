@@ -1,0 +1,30 @@
+<div id="contentAdsDelete">
+
+	<h1><mx:text id="title" /></h1>
+
+	<!-- Bloc pour le message d'avertissement -->
+	<mx:bloc id="msg_confirmation">
+		<div class="msgConfirmation" >
+			<p><mx:text id="msg" /></p>
+			<mx:bloc id="confirm_link"><a mXattribut="href:href;hreflang:hreflang;title:title" class="msgConfirmationConfirmLink" ><span><mx:text id="label" /></span></a></mx:bloc id="confirm_link">
+			<mx:bloc id="bk"><a mXattribut="href:href;hreflang:hreflang;title:title" class="msgConfirmationBk" ><span><mx:text id="label" /></span></a></mx:bloc id="bk">
+		</div>
+	</mx:bloc id="msg_confirmation">
+
+	<!-- Bloc pour l'affichage du message de confirmation d'enregistrement -->
+	<mx:bloc id="msg_save">
+		<div class="msgSave" >
+			<p>Votre annonce a bien &eacute;t&eacute; supprim&eacute;e.</p>
+			<mx:bloc id="bk"><a mXattribut="href:href;hreflang:hreflang;title:title" class="msgSaveBk" ><span><mx:text id="label" /></span></a></mx:bloc id="bk">
+		</div>
+	</mx:bloc id="msg_save">
+
+	<!-- Affichage d'un msg d'erreur si aucune action n'est possible	 -->
+	<mx:bloc id="error">
+		<div class="error">
+			<p><mx:text id="error_msg" /></p>
+			<mx:bloc id="bk"><a mXattribut="href:href;hreflang:hreflang;title:title" class="errorBk" ><span><mx:text id="label" /></span></a></mx:bloc id="bk">
+		</div>
+	</mx:bloc id="error">
+
+</div>

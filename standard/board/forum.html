@@ -1,0 +1,80 @@
+<div class="boardForum">
+
+	<h1><mx:text id="title"/></h1>
+	<p><mx:text id="description"/></p>
+	
+	<mx:bloc id="content">
+	
+		<mx:bloc id="newtopic">
+			<div id="newtopic" ><a mXattribut="href:href;hreflang:hreflang;title:title;onclick:onclick" class="newtopicLink" ><span><mx:text id="label"/></span></a></div>
+		</mx:bloc id="newtopic">
+		
+		<table>
+			<thead>
+				<tr>
+					<th colspan="2"><mx:text id="hTopic"/></th>
+					<th><mx:text id="hReplies"/></th>
+					<th><mx:text id="hAuthor"/></th>
+					<th><mx:text id="hViews"/></th>
+					<th><mx:text id="hLastPost"/></th>
+				</tr>
+			</thead>
+			<tbody>
+				<mx:bloc id="topic">
+					<tr mXattribut="class:row_class">
+						<td class="boardTopicFlag">
+							<div mXattribut="class:flag_class"></div>
+						</td>
+						<td class="boardTopicTopic">
+							<!-- Il est possible d'enlever le bloc flag -->
+							<mx:bloc id="flag"><span class="flag"><mx:text id="flag"/> : </span></mx:bloc id="flag">
+							<a mXattribut="href:subject_href;hreflang:subject_hreflang;title:subject_title;onclick:subject_onclick" class="boardTopicTopicLink" ><span><mx:text id="subject"/></span></a>
+						</td>
+						<td class="boardTopicReplies"><mx:text id="replies"/></td>
+						<td class="boardRopicAuthor"><mx:text id="author"/></td>
+						<td class="boardTopicViews"><mx:text id="views"/></td>
+						<td class="boardTopicLastpost">
+							<mx:bloc id="lastPost">
+								<mx:text id="lastPostDate"/>
+								<br/>
+								<a mXattribut="href:post_href;hreflang:post_hreflang;title:post_title;onclick:post_onclick" class="lastPostLink" >
+								<span><mx:text id="lastPoster"/></span>
+								</a>
+							</mx:bloc id="lastPost">
+						</td>
+					</tr>
+				</mx:bloc id="topic">
+				<mx:bloc id="notopic">
+					<tr>
+						<td colspan="6"><mx:text id="notopic"/></td>
+					</tr>
+				</mx:bloc id="notopic">
+			</tbody>
+		</table>
+		
+		<mx:bloc id="pager">
+			<div class="pager">
+				<span class="boardPrevious">
+					<mx:bloc id="previous">
+						<a mXattribut="href:href;hreflang:hreflang;title:title;onclick:onclick" class="boardPrevious" ><span>&lt;</span></a>
+					</mx:bloc id="previous">
+				</span>
+				<span class="boardPage">
+					<mx:bloc id="page">
+						<mx:bloc id="link"><a mXattribut="href:href;hreflang:hreflang;title:title;onclick:onclick" class="boardPage" ><span><mx:text id="label"/></span></a></mx:bloc id="link"><mx:bloc id="current"><mx:text id="label"/></mx:bloc id="current">
+					</mx:bloc id="page">
+				</span>
+				<span class="boardNext">
+					<mx:bloc id="next">
+						<a mXattribut="href:href;hreflang:hreflang;title:title;onclick:onclick" class="boardNext" ><span>&gt;</span></a>
+					</mx:bloc id="next">
+				</span>
+			</div>
+		</mx:bloc id="pager">
+
+	</mx:bloc id="content">
+
+	<mx:bloc id="deny">
+		<mx:text id="message"/>
+	</mx:bloc id="deny">
+</div>

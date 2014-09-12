@@ -1,0 +1,119 @@
+<div id="weather">
+  <h1><mx:text id="title" />, <mx:text id="location_name" /></h1>
+  
+  <mx:bloc id="town_selector">
+    <form id="townselectionweathercontent" mXattribut="action:action" method="post">
+      <fieldset>
+        <legend><mx:text id="select_label" /></legend>
+        <div class="row">
+            <label for="select_townselectionweathercontent"><mx:text id="select_label" /></label>
+            <select name="select_townselectionweather" id="select_townselectionweathercontent">
+              <mx:bloc id="options"><option mXattribut="value:value;selected:selected"><mx:text id="option" /></option></mx:bloc id="options">
+            </select>
+        </div>
+      </fieldset>
+      <div class="submit">
+        <input type="submit" name="submittownselectionweather" mXattribut="value:value" />
+      </div>
+    </form>
+  </mx:bloc id="town_selector">
+  
+  <div id="currentWeather">
+    <h2><mx:text id="current_weather" /></h2>
+    <div class="weatherRow">
+      <span class="weatherLabel"><mx:text id="sunrize_label" />&nbsp;:&nbsp;</span>
+      <span class="weatherValue"><img mXattribut="src:srcsunrize;alt:altsunrize" /><mx:text id="location_sunrize" /> </span>
+    </div>  
+    <div class="weatherRow">
+      <span class="weatherLabel"><mx:text id="sunset_label" />&nbsp;:&nbsp;</span>
+      <span class="weatherValue"><img mXattribut="src:srcsunset;alt:altsunset" /><mx:text id="location_sunset" /></span>
+    </div>
+    <div class="weatherRow">
+      <span class="weatherLabel"><mx:text id="temperature_label" />&nbsp;:&nbsp;</span>
+      <span class="weatherValue"><mx:text id="weather_temperature" /></span>
+    </div>
+    <div class="weatherRow">
+      <span class="weatherLabel"><mx:text id="dew_point_label" />&nbsp;:&nbsp;</span>
+      <span class="weatherValue"><mx:text id="weather_dew_point" /></span>
+    </div>
+    <div class="weatherRow">
+      <span class="weatherLabel"><mx:text id="felt_temperature_label" />&nbsp;:&nbsp;</span>
+      <span class="weatherValue"><mx:text id="weather_felt_temperature" /></span>
+    </div>
+    <div class="weatherRow">
+      <span class="weatherLabel"><mx:text id="pressure_label" />&nbsp;:&nbsp;</span>
+      <span class="weatherValue"><mx:text id="weather_felt_pressure" /></span>
+    </div>
+    <div class="weatherRow">
+      <span class="weatherLabel"><mx:text id="humidity_label" />&nbsp;:&nbsp;</span>
+      <span class="weatherValue"><mx:text id="weather_humidity" /></span>
+    </div>
+    <div class="weatherRow">
+      <span class="weatherLabel"><mx:text id="wind_label" />&nbsp;:&nbsp;</span>
+      <span class="weatherValue"><mx:text id="weather_wind" /></span>
+    </div>
+    <div class="weatherRow">
+      <span class="weatherLabel"><mx:text id="visibility_label" />&nbsp;:&nbsp;</span>
+      <span class="weatherValue"><mx:text id="weather_visibility" /></span>
+    </div>
+    <div class="weatherRow">
+      <span class="weatherLabel"><mx:text id="uv_index_label" />&nbsp;:&nbsp;</span>
+      <span class="weatherValue"><mx:text id="weather_uv_index" /></span>
+    </div>
+    <div class="weatherCondition">
+      <img mXattribut="alt:altcondition;src:srccondition" />
+      <span class="weatherConditionDescription"><mx:text id="weather_condition" /></span>
+    </div>
+    
+  </div>
+  
+  <div id="weatherForecast">
+    <h2><mx:text id="weather_forecast" /></h2>
+    <span class="weatherForecastUpdatetime"><mx:text id="weather_forecast_updatetime" /></span>
+    <mx:bloc id="weather_forecast">
+    <div class="weatherForecastWeekday">
+      <h3><mx:text id="forecast_dayname" /></h3>
+      <span class="temperature"><mx:text id="forecast_temperature_min" /> / <mx:text id="forecast_temperature_max" /></span>
+      <div class="day">
+        <mx:bloc id="day">
+        <h4><mx:text id="forecast_day" /></h4>
+        <img mXattribut="src:srcday;alt:altday" />
+        <span class="weatherConditionDescription"><mx:text id="forecast_day_condition" /></span>
+        <div class="weatherRow">
+          <span class="weatherLabel"><mx:text id="precipitation_label" />&nbsp;:&nbsp;</span>
+          <span class="weatherValue"><mx:text id="forecast_day_precipitation" /></span>
+        </div>
+        <div class="weatherRow">
+          <span class="weatherLabel"><mx:text id="wind_label" />&nbsp;:&nbsp;</span>
+          <span class="weatherValue"><mx:text id="forecast_day_wind" /></span>
+        </div>
+        <div class="weatherRow">
+          <span class="weatherRow"><mx:text id="humidity_label" />&nbsp;:&nbsp;</span>
+          <span class="weatherValue"><mx:text id="forecast_day_humidity" /></span>
+        </div>
+        </mx:bloc id="day">
+      </div>
+      <div class="night">
+        <mx:bloc id="night">
+        <h4><mx:text id="forecast_night" /></h4>
+        <img mXattribut="src:srcnight;alt:altnight" />
+        <span class="weatherConditionDescription"><mx:text id="forecast_night_condition" /></span>
+        <div class="weatherRow">
+          <span class="weatherRow"><mx:text id="precipitation_label" />&nbsp;:&nbsp;</span>
+          <span class="weatherValue"><mx:text id="forecast_night_precipitation" /></span>
+        </div>
+        <div class="weatherRow">
+          <span class="weatherRow"><mx:text id="wind_label" />&nbsp;:&nbsp;</span>
+          <span class="weatherValue"><mx:text id="forecast_night_wind" /></span>
+        </div>
+        <div class="weatherRow">
+          <span class="weatherRow"><mx:text id="humidity_label" />&nbsp;:&nbsp;</span>
+          <span class="weatherValue"><mx:text id="forecast_night_humidity" /></span>
+        </div>
+        </mx:bloc id="night">
+      </div>
+    </div>
+    </mx:bloc id="weather_forecast">
+  </div>
+  <p class="weathercom" >Weather data provided by <a href="http://www.weather.com" class="linkout" hreflang="en">weather.com &reg;</a></p>
+</div>

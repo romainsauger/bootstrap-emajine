@@ -1,0 +1,103 @@
+<div class="board">
+<!--  Bloc formulaire de recherche -->
+  <mx:bloc id="form">
+    <form mxAttribut="action:action;method:method" id="board_search_form">
+      <fieldset>
+        <legend>Recherche</legend>
+        <div class="row searchWords">
+            <label for="search_words"><mx:text id="label_words" /></label>
+            <input id="search_words" type="text" name="search_words" size="30" mXattribut="value:value_search_words" class="wordsbox"/>
+        </div>
+        <div class="row searchSubject">
+            <label for="search_subject"><mx:text id="label_subject" /></label>
+            <input id="search_subject" type="checkbox" name="search_subject" mXattribut="checked:checked_subject" class="checkbox" />
+        </div>
+        <div class="row searchText">
+            <label for="search_text"><mx:text id="label_text" /></label>
+            <input id="search_text" type="checkbox" name="search_text" mXattribut="checked:checked_text" class="checkbox" />
+        </div>  
+        <div class="row">
+            <label for="select_board"><mx:text id="label_select_board" /></label>
+            <select name="select_board[]" id="select_board" size="4" multiple="multiple">
+              <option mXattribut="value:value;selected:selected"><mx:text id="label" id="label" class="all"/></option>
+              <mx:bloc id="options_cat">
+                <option mXattribut="value:value;selected:selected" class="category"><mx:text id="label" id="label" /></option>
+                <mx:bloc id="options_for">
+                  <option mXattribut="value:value;selected:selected" class="forum"><mx:text id="label" id="label" /></option>
+                </mx:bloc id="options_for">
+              </mx:bloc id="options_cat">
+            </select>
+        </div>
+        <div class="row searchDate">
+            <label for="search_date"><mx:text id="label_date" /></label>
+            <input id="search_date" type="text" name="search_date" size="10" mXattribut="value:value_date" />
+        </div>
+        <div class="row searchAuthor">
+            <label for="search_author"><mx:text id="label_author" /></label>
+            <input id="search_author" type="text" name="search_author" size="30" mXattribut="value:value_author" />
+        </div>
+      </fieldset>
+        <div class="submit">
+          <input type="submit" name="submit_search" value="lancer la recherche" id="search_submit"/>
+          <input type="reset" name="reset_search" value="Réinitialiser" id="reset_search"/>
+        </div>
+    </form>
+  </mx:bloc id="form">
+<!--   Bloc contenant la liste des resulats  -->
+  <mx:bloc id="matches">
+  <h3><mx:text id="title"/></h3>
+    <table>
+      <thead>
+        <tr>
+          <th mXattribut="class:class_topic"><a mXattribut="href:topic_href;hreflang:hreflang:title:topic_title"><mx:text id="label_topic" /></a></th>
+          <th mXattribut="class:class_author"><a mXattribut="href:author_href;hreflang:hreflang:title:author_title"><mx:text id="label_author" /></a></th>
+          <th mXattribut="class:class_reply"><a mXattribut="href:reply_href;hreflang:hreflang:title:reply_title"><mx:text id="label_reply" /></a></th>
+          <th mXattribut="class:class_date"><a mXattribut="href:date_href;hreflang:hreflang:title:date_title"><mx:text id="label_date" /></a></th>
+          <th mXattribut="class:class_last_date"><a mXattribut="href:last_date_href;hreflang:hreflang:title:last_date_title"><mx:text id="label_last_date" /></a></th>
+          <th mXattribut="class:class_board"><a mXattribut="href:board_href;hreflang:hreflang:title:board_title"><mx:text id="label_forum" /></a></th>
+          <th mXattribut="class:class_cat"><a mXattribut="href:cat_href;hreflang:hreflang:title:cat_title"><mx:text id="label_category" /></a></th>
+        </tr>
+      </thead>
+      <tbody>
+        <mx:bloc id="list">
+          <tr mXattribut="class:class">
+            <td><a mXattribut="href:topic_href;hreflang:hreflang:title:topic_title"><mx:text id="topic" /></a></td>
+            <td><mx:text id="author" /></td>
+            <td><mx:text id="reply" /></td>
+            <td><mx:text id="date" /></td>
+            <td><mx:text id="last_date" /></td>
+            <td><a mXattribut="href:board_href;hreflang:hreflang:title:board_title"><mx:text id="forum" /></a></td>
+            <td><mx:text id="category" /></td>
+          </tr>
+        </mx:bloc id="list">
+      </tbody>
+      <tfoot>
+        <tr>
+          <th mXattribut="class:class_topic"><a mXattribut="href:topic_href;hreflang:hreflang:title:topic_title"><mx:text id="label_topic" /></a></th>
+          <th mXattribut="class:class_author"><a mXattribut="href:author_href;hreflang:hreflang:title:author_title"><mx:text id="label_author" /></a></th>
+          <th mXattribut="class:class_reply"><a mXattribut="href:reply_href;hreflang:hreflang:title:reply_title"><mx:text id="label_reply" /></a></th>
+          <th mXattribut="class:class_date"><a mXattribut="href:date_href;hreflang:hreflang:title:date_title"><mx:text id="label_date" /></a></th>
+          <th mXattribut="class:class_last_date"><a mXattribut="href:last_date_href;hreflang:hreflang:title:last_date_title"><mx:text id="label_last_date" /></a></th>
+          <th mXattribut="class:class_board"><a mXattribut="href:board_href;hreflang:hreflang:title:board_title"><mx:text id="label_forum" /></a></th>
+          <th mXattribut="class:class_cat"><a mXattribut="href:cat_href;hreflang:hreflang:title:cat_title"><mx:text id="label_category" /></a></th>
+        </tr>
+      </tfoot>
+    </table>
+<!--   Bloc pagination    -->
+    <mx:bloc id="pager">
+      <mx:bloc id="first">&lt;&lt;</mx:bloc id="first">
+      <mx:bloc id="previous">&lt;</mx:bloc id="previous">
+      <mx:bloc id="last">&gt;&gt;</mx:bloc id="last">
+      <mx:bloc id="next">&gt;</mx:bloc id="next">
+      <mx:bloc id="separator">&nbsp;</mx:bloc id="separator">
+      <div class="pager"><mx:bloc id="items"><mx:text id="spacer" /><a mXattribut="href:href;hreflang:hreflang;title:title"><mx:text id="item" /></a></mx:bloc id="items"></div>
+    </mx:bloc id="pager">
+  </mx:bloc id="matches">
+<!--    Bloc pour quand il  n'y a aucune resultat. -->
+  <mx:bloc id="no_matches">
+    <mx:text id="no_match_found" />
+  </mx:bloc id="no_matches">
+
+</div>
+
+

@@ -1,0 +1,50 @@
+<div id="accountAdsList">
+	<h1><mx:text id="title" /></h1>
+	
+	<mx:bloc id="no_result">
+		<div class="noResult">
+			<mx:text id="no_result" />
+		</div>
+	</mx:bloc id="no_result">
+	
+	<mx:bloc id="ads_list">
+	<div id="adsList">
+		<table>
+			<thead>
+				<tr>
+					<th><mx:text id="libelle" /></th>
+					<th><mx:text id="date" /></th>
+					<th><mx:text id="date_fin_publication" /></th>
+					<th><mx:text id="status" /></th>
+					<th mXattribut="colspan:colspan_actions"><mx:text id="actions" /></th>
+				</tr>
+			</thead>
+			<tbody>
+				<mx:bloc id="ads">
+				<tr>
+					<td><mx:text id="libelle" /></td>
+					<td><mx:text id="date" /></td>
+					<td><mx:text id="date_fin_publication" /></td>
+					<td><mx:text id="status" /></td>
+					<mx:bloc id="details">
+						<td><a mXattribut="href:href;hreflang:hreflang;title:title" class="accountAdsListDetails" ><span><mx:text id="label" /></span></a></td>
+					</mx:bloc id="details">
+					<mx:bloc id="edit">
+						<td><a mXattribut="href:href;hreflang:hreflang;title:title" class="accountAdsListEdit" ><span><mx:text id="label" /></span></a></td>
+					</mx:bloc id="edit">
+					<mx:bloc id="renouvellement">
+						<td><a mXattribut="href:href;hreflang:hreflang;title:title" class="accountAdsListRenouvellement" ><span><mx:text id="label" /></span></a></td>
+					</mx:bloc id="renouvellement">
+					<mx:bloc id="moderation">
+						<td><a mXattribut="href:href;hreflang:hreflang;title:title" class="accountAdsListModeration" ><span><mx:text id="label" /></span></a></td>
+					</mx:bloc id="moderation">
+					<mx:bloc id="delete">
+						<td><a mXattribut="href:href;hreflang:hreflang;title:title" class="accountAdsListDelete" ><span><mx:text id="label" /></span></a></td>
+					</mx:bloc id="delete">
+				</tr>
+				</mx:bloc id="ads">
+			</tbody>
+		</table>
+	</div>
+	</mx:bloc id="ads_list">
+</div>	

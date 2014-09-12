@@ -1,0 +1,49 @@
+	<mx:bloc id="messageHTML">
+		<html>
+			<body>
+				<mx:text id="date" /><br />
+				Bonjour,<br />
+				Votre accès à la page <mx:text id="page" /> est maintenant valide.
+				
+				<mx:bloc id="confirmation_message">
+					<mx:text id="message" />
+				</mx:bloc id="confirmation_message">
+				
+				<mx:bloc id="user_informations">
+					Vous avez été inscrit avec le login <mx:text id="login"/> <br />
+					et le mot de passe <mx:text id="password"/><br />
+				</mx:bloc id="user_informations">
+				
+				<br />
+				Pour consulter le site : <a href="<mx:text id="site_url" />"><mx:text id="site_url" /></a>
+				<br />
+				Pour des questions : <mx:text id="contact"/><br />
+				<br />
+				A bientot<br />
+			</body>
+		</html>
+	</mx:bloc id="messageHTML">
+	
+	<mx:bloc id="messageTXT">
+
+		<mx:text id="date" />
+		Bonjour,
+		
+		Votre accès à la page <mx:text id="page" /> est maintenant valide.
+		
+		<mx:bloc id="confirmation_message">
+			<mx:text id="message" />
+		</mx:bloc id="confirmation_message">
+		
+		<mx:bloc id="user_informations">	
+			Vous avez été inscrit avec le login <mx:text id="login"/> 
+			et le mot de passe <mx:text id="password"/>
+		</mx:bloc id="user_informations">
+		
+		Pour consulter le site : <mx:text id="site_url"/>
+		
+		Pour des questions : <mx:text id="contact"/>
+		
+		A bientot
+
+	</mx:bloc id="messageTXT">	

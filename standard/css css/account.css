@@ -1,0 +1,70 @@
+/* -------------------------
+BOITE GESTION DE COMPTE
+--------------------------*/
+.widgetLogin{
+}
+	.widgetLogin a{
+		margin-right: 10px;
+	}
+	div.widgetLoginLinks{
+		text-align:left;
+	}
+	span.widgetLoginState{
+		color:#000000;
+		font-weight:bold;
+		margin-right:5px;
+	}
+	span.widgetLoginUsername{
+	}
+	#header .widgetLogin .row,
+	#header .widgetLogin label,
+	#header .widgetLogin form,
+	#header .widgetLogin .submit,
+	#header .widgetLogin .widgetLoginLinks{
+		display: inline;
+	}
+	#header .widgetLogin fieldset{
+		display:inline;
+		width: auto;
+	}
+	#header .widgetLogin input{
+		margin-right:10px;
+	}
+	#header .widgetLogin .submit input{
+		background:#007aaa;
+		border:none;
+	}
+	
+/* -------------------------
+PERSONNALISATION DU COMPTE
+--------------------------*/	
+#authentification{
+}
+#accountActions{
+}
+#accountModify{
+}
+#accountChangePassword{
+}
+#accountAccesConfiguration{
+}
+#accountAddress{
+}
+#accountOrdersList{
+}
+#accountPendingOrders{
+} 
+#accountHistoryOrders{
+}
+#accountOrdersDetail{
+}
+#accountAuthentification{
+}
+#accountAuthentificationForm{
+}
+#accountAuthentificationSubscription{
+}
+#accountNewPassword{
+}
+#accountSubscription{
+}

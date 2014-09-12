@@ -1,0 +1,58 @@
+<div class="widget widgetLogin" mXattribut="class:box_class">
+
+<mx:bloc id="widgetTitle"><h4><mx:text id="widgetTitle" /></h4></mx:bloc id="widgetTitle">
+
+	
+	<div class="widgetContainer">
+		<mx:bloc id="form">
+			<form id="loginboxform" method="post" mXattribut="action:action">
+				<fieldset>
+					<legend><mx:text id="login_legend" /></legend>
+					<div class="row">
+						<span class="label">
+							<label for="username"><mx:text id="username" /></label>
+						</span>
+						<span class="fields">
+							<input type="text" name="username" id="username" />
+						</span>
+					</div>
+					<div class="row">
+						<span class="label">
+								<label for="password"><mx:text id="password" /></label>
+						</span>
+						<span class="fields">
+							<input type="password" name="password" id="password" />
+						</span>
+					</div>
+					<div class="bouton_login">
+						<input type="submit" mXattribut="value:submit_value" />
+					</div>
+					<input type="hidden" name="manageaccount" value="1" />
+				</fieldset>
+			</form>
+			<div class="widgetLoginLinks">
+				<a mXattribut="href:hrefpassword;hreflang:hreflangpassword;title:titlepassword"><mx:text id="lost_password" /></a><br />
+				<a mXattribut="href:hrefsubscribe;hreflang:hreflangsubscribe;title:titlesubscribe"><mx:text id="subscribe" /></a>
+			</div>
+		</mx:bloc id="form">
+	
+		<mx:bloc id="link">
+			<div class="widgetLoginLinks">
+				<a mXattribut="href:hreflogin;hreflang:hreflanglogin;title:titlelogin"><mx:text id="login" /></a>
+				<a mXattribut="href:hrefsubscribe;hreflang:hreflangsubscribe;title:titlesubscribe"><mx:text id="subscribe" /></a>
+			</div>
+		</mx:bloc id="link">
+	
+		<mx:bloc id="manage">
+			<!--<span class="widgetLoginState"><mx:text id="name_label" /></span>-->
+			<!--<span class="widgetLoginUsername"><mx:text id="name" /></span>-->
+			<div class="widgetLoginLinks">
+				<!--<a mXattribut="href:hreflogout;hreflang:hreflanglogout;title:titlelogout"><mx:text id="logout" /></a>-->
+				<!-- <a mXattribut="href:hrefmanage;hreflang:hreflangmanage;title:titlemanage"><mx:text id="manage" /></a> -->
+				<a href="/mon-compte/account-commandes.html"><mx:text id="manage" /></a>
+			</div>
+		</mx:bloc id="manage">
+	</div>
+	
+	<div class="widgetFooter"></div>
+</div>

@@ -1,0 +1,61 @@
+<div class="board">
+
+	<mx:bloc id="crumb">
+		<div class="boardCrumb">
+			<mx:bloc id="main">
+				<a mXattribut="href:href;hreflang:hreflang;title:title" class="boardCrumbMain" ><span><mx:text id="label"/></span></a>
+			</mx:bloc id="main">
+			<mx:bloc id="forum">
+				/ <a mXattribut="href:href;hreflang:hreflang;title:title" class="boardCrumbForum"><span class="boardCrumbForumCategory"><mx:text id="category"/></span> - <span class="boardCrumbForumLabel"><mx:text id="label"/></span></a>
+			</mx:bloc id="forum">
+			<mx:bloc id="topic">
+				/ <a mXattribut="href:href;hreflang:hreflang;title:title" class="boardCrumbTopic"><span><mx:text id="label"/></span></a>
+			</mx:bloc id="topic">
+		</div>
+	</mx:bloc id="crumb">
+
+	<div class="boardHeader">
+		<mx:text id="header"/>
+	</div>
+
+	<div class="boardActions">
+		<mx:bloc id="log_in">
+			<div class="logIn" >
+				<a mXattribut="href:href;hreflang:hreflang;title:title"><span><mx:text id="label"/></span></a>
+			</div>
+		</mx:bloc id="log_in">			
+		<mx:bloc id="search">
+			<div class="search" >
+				<a mXattribut="href:href;hreflang:hreflang;title:title"><span><mx:text id="label"/></span></a>
+			</div>
+		</mx:bloc id="search">				
+		<mx:bloc id="profile">
+			<div class="profile" >
+				<a mXattribut="href:href;hreflang:hreflang;title:title"><span><mx:text id="label"/></span></a>
+			</div>
+		</mx:bloc id="profile">		
+	</div>
+	
+	<div class="boardContent">
+		<mx:text id="content"/>
+		
+		<mx:bloc id="deny">
+			<mx:text id="message"/>
+		</mx:bloc id="deny">
+	</div>
+	
+	
+	<div class="boardFooter">
+		<mx:bloc id="rss">
+		<h4>Syndication</h4>
+		<ul>
+			<li><mx:rssfeed title="Fil RSS version 0.91 du forum" content="Fil RSS v0.91" type="rss0.91"/></li>
+			<li><mx:rssfeed title="Fil RSS version 1.0 du forum" content="Fil RSS v1.0" type="rss1.0"/></li>
+			<li><mx:rssfeed title="Fil RSS version 2.0 du forum" content="Fil RSS v2.0" type="rss2.0"/></li>
+			<li><mx:rssfeed title="Fil Atom version 0.3 du forum" content="Fil Atom v0.3" type="atom0.3"/></li>
+			<li><mx:rssfeed title="Fil Atom version 1.0 du forum" content="Fil Atom v1.0" type="atom"/></li>
+		</ul>
+		</mx:bloc id="rss">
+		<mx:text id="footer"/>
+	</div>
+</div>

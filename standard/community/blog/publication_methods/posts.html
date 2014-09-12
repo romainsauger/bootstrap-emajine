@@ -1,0 +1,65 @@
+<div class="content">
+<!-- Titre et description -->
+<h1><mx:text id="title" /></h1>
+<div class="PostDescription" ><mx:text id="description" /></div>
+
+<!-- Affiche "Billets avec le tag ..." si recherche par tag -->
+<mx:bloc id="results_by_tag">
+	<h3 class="PostsResultsByTag" ><mx:text id="msg" /> : <mx:text id="tag" /></h3>
+</mx:bloc id="results_by_tag">
+
+<!-- Affiche "Billets ecrits par ..." si recherche par author -->
+<mx:bloc id="results_by_author">
+	<h3 class="PostsResultsByAuthor" ><mx:text id="msg" /> : <mx:text id="author" /></h3>
+</mx:bloc id="results_by_author">
+
+<!-- Affiche "Billets publies le ..." si recherche par date -->
+<mx:bloc id="results_by_date">
+	<h3 class="PostsResultsByDate" ><mx:text id="msg" /> : <mx:text id="date" /></h3>
+</mx:bloc id="results_by_date">
+
+<!-- Bloc contenant le formulaire de contribution -->
+<mx:bloc id="contribution_form">
+	<div class="contribution"><mx:text id="content" /></div>
+</mx:bloc id="contribution_form">
+
+<!-- Lien pour l'ajout d'un billet si l'option contribution est active -->
+<mx:bloc id="contribute">
+	<span class="contribute"><a mXattribut="href:href;hreflang:hreflang;title:title;class:class"><span><mx:text id="label" /></span></a></span>
+</mx:bloc id="contribute">
+
+<!-- Liste des billets -->
+<mx:bloc id="posts">
+
+	<!-- Liste de billets	 -->
+	<mx:bloc id="post">
+		<div class="post"><mx:text id="post" /></div>
+	</mx:bloc id="post">
+	
+	<!-- Pager -->
+	<mx:bloc id="pager">
+		<mx:bloc id="first">&lt;&lt;</mx:bloc id="first">
+		<mx:bloc id="previous">&lt;</mx:bloc id="previous">
+		<mx:bloc id="last">&gt;&gt;</mx:bloc id="last">
+		<mx:bloc id="next">&gt;</mx:bloc id="next">
+		<mx:bloc id="separator">&nbsp;</mx:bloc id="separator">
+		<div class="pager">
+			<mx:bloc id="items">
+				<mx:text id="spacer" /><a mXattribut="href:href;hreflang:hreflang;title:title;class:class"><mx:text id="item" /></a>
+			</mx:bloc id="items">
+		</div>
+	</mx:bloc id="pager">
+</mx:bloc id="posts">
+
+<!-- Detail d'un billet -->
+<mx:bloc id="post">
+	<div class="postDetail" >
+		<mx:text id="detail" />
+	</div>
+</mx:bloc id="post">
+
+<!-- Message dans le cas ou aucun billet n'est trouve -->
+<mx:bloc id="no_results">
+	<h4 class="PostNoResult" ><mx:text id="msg" /></h4>
+</mx:bloc id="no_results">
+</div>

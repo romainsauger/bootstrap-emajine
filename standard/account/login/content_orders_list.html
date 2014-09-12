@@ -1,0 +1,67 @@
+<div id="accountOrdersList" class="content">
+	<h1><mx:text id="title" /></h1>
+	
+	<mx:bloc id="no_result">
+		<mx:text id="no_result" />
+	</mx:bloc id="no_result">
+	
+	<mx:bloc id="pending_orders">
+	<div id="accountPendingOrders">
+		<h2><mx:text id="pending_orders_title" /></h2>
+		<table>
+			<thead>
+				<tr>
+					<th><mx:text id="order_reference" /></th>
+					<th><mx:text id="date" /></th>
+					<th><mx:text id="etat" /></th>
+					<th><mx:text id="infos" /></th>
+					<th><mx:text id="ask_for_invoice" /></th>
+					<mx:bloc id="follow_up_package">
+					<th><mx:text id="package" /></th>
+					</mx:bloc id="follow_up_package">
+				</tr>
+			</thead>
+			<tbody>
+				<mx:bloc id="order">
+				<tr>
+					<td><mx:text id="order_reference" /></td>
+					<td><mx:text id="date" /></td>
+					<td><mx:text id="etat" /></td>
+					<td><a mXattribut="href:hrefinfo;hreflang:hreflanginfo;title:titleinfo" class="accountPendingOrdersInfo" ><span><mx:text id="infos" /></span></a></td>
+					<td><a mXattribut="href:hrefinvoice;hreflang:hreflanginvoice;title:titleinvoice" class="accountPendingOrdersInvoice"><span><mx:text id="ask_for_invoice" /></span></a></td>
+					<mx:bloc id="follow_up_order">
+					<td><a mXattribut="href:hrefpackage;hreflang:hreflangpackage;title:titlepackage" class="accountPendingOrdersPackage"><span><mx:text id="package" /></span></a></td>
+					</mx:bloc id="follow_up_order">
+				</tr>
+				</mx:bloc id="order">
+			</tbody>
+		</table>
+	</div>
+	</mx:bloc id="pending_orders">
+	
+	<mx:bloc id="history">
+		<div id="accountHistoryOrders">
+			<h2><mx:text id="history_title" /></h2>
+			<table>
+				<thead>
+					<tr>
+						<th><mx:text id="order_reference" /></th>
+						<th><mx:text id="date" /></th>
+						<th><mx:text id="infos" /></th>
+						<th><mx:text id="ask_for_invoice" /></th>
+					</tr>
+				</thead>
+				<tbody>
+					<mx:bloc id="order">
+						<tr>
+							<td><mx:text id="order_reference" /></td>
+							<td><mx:text id="date" /></td>
+							<td><a mXattribut="href:hrefinfo;hreflang:hreflanginfo;title:titleinfo" class="accountHistoryOrdersInfo" ><span><mx:text id="infos" /></span></a></td>
+							<td><a mXattribut="href:hrefinvoice;hreflang:hreflanginvoice;title:titleinvoice"class="accountHistoryOrdersInvoice"><span><mx:text id="ask_for_invoice" /></span></a></td>
+						</tr>
+					</mx:bloc id="order">
+				</tbody>
+			</table>
+		</div>
+	</mx:bloc id="history">
+</div>	
